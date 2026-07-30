@@ -3,117 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Celonis Process Intelligence Sales Brief — July 29, 2026</title>
+<title>Celonis Process Intelligence Sales Brief — July 30, 2026</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #f7f8fa; color: #1a1f36; line-height: 1.55;
-    padding: 20px; padding-bottom: 70px; max-width: 1200px; margin: 0 auto;
-  }
-  a { color: #2d4cb8; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .header {
-    background: linear-gradient(135deg, #0d1b3d 0%, #2d4cb8 100%);
-    color: #fff; border-radius: 16px; padding: 34px 30px;
-    box-shadow: 0 12px 34px rgba(13,27,61,0.35); margin-bottom: 16px;
-  }
-  .header h1 { font-size: 27px; font-weight: 800; letter-spacing: -0.5px; }
-  .header p { opacity: 0.9; margin-top: 8px; font-size: 15px; }
-  .header .weekchip {
-    display: inline-block; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.3);
-    padding: 5px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; margin-top: 14px;
-  }
-  /* Sticky nav */
-  .nav {
-    position: sticky; top: 0; z-index: 100; background: rgba(247,248,250,0.95);
-    backdrop-filter: blur(8px); padding: 10px 0; margin-bottom: 18px;
-    display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid #e3e6ec;
-  }
-  .nav a {
-    background: #fff; border: 1px solid #d9dee8; border-radius: 20px;
-    padding: 6px 13px; font-size: 12px; font-weight: 600; color: #48506b; white-space: nowrap;
-  }
-  .nav a.active { background: #0d1b3d; color: #fff; border-color: #0d1b3d; }
-  /* Section */
-  section { margin-bottom: 38px; scroll-margin-top: 70px; }
-  .sec-title { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-  .badge {
-    width: 34px; height: 34px; border-radius: 50%; color: #fff;
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 800; font-size: 16px; flex-shrink: 0;
-  }
-  .sec-title h2 { font-size: 21px; color: #0d1b3d; font-weight: 800; }
-  .sec-title .sub { font-size: 13px; color: #6b7280; }
-  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .card {
-    background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    padding: 18px 20px;
-  }
-  .tag {
-    display: inline-block; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;
-    font-weight: 700; padding: 3px 9px; border-radius: 10px; color: #fff;
-  }
-  .box {
-    background: #f2f4f8; border-radius: 8px; padding: 12px 14px; margin-top: 12px; font-size: 14px;
-  }
-  .callout { border-left: 4px solid #ccc; padding: 10px 14px; border-radius: 6px; margin-top: 12px; font-size: 14px; }
-  .callout.discovery { border-color: #e0a800; background: #fef9e7; }
-  .callout.outreach { border-color: #16a085; background: #e9f7f2; }
-  .callout.hook { border-color: #e0a800; background: #fef9e7; }
-  .callout.blue { border-color: #2d4cb8; background: #eef1fb; }
-  .muted { font-style: italic; color: #808697; }
-  .pill { display:inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px; margin: 3px 4px 0 0; }
-  .src { font-size: 12px; margin-top: 10px; }
-  h3.day { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
-  h3.acct { font-size: 22px; font-weight: 800; color: #0d1b3d; margin-top: 2px; margin-bottom: 4px; }
-  .contact { font-size: 14px; margin-bottom: 6px; }
-  /* Section-specific card left borders */
-  .s1card { border-left: 5px solid #7b2d8b; }
-  .s3card { border-top: 5px solid #16a085; }
-  .s7card { border-left: 5px solid #c0392b; }
-  .draftbox { border-left: 4px solid #c0392b; background: #fdecea; border-radius: 6px; padding: 12px 14px; margin-top: 12px; font-size: 13.5px; }
-  .cadence { background: #f2f4f8; border-radius: 8px; padding: 10px 13px; margin-top: 10px; font-size: 13px; }
-  /* Stat bar */
-  .statbar { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 18px; }
-  .statcard { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); padding: 16px; text-align: center; }
-  .statcard .num { font-size: 30px; font-weight: 800; color: #2d4cb8; }
-  .statcard .lbl { font-size: 12px; color:#5a6072; margin-top: 4px; }
-  .statcard .src2 { font-size: 10px; color: #9aa0b0; margin-top: 6px; }
-  /* Dark hook cards */
-  .hookgrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
-  .hookcard { border-radius: 12px; padding: 18px; color: #fff; }
-  .hookcard.navy { background: linear-gradient(135deg,#0d1b3d,#1c2f5e); }
-  .hookcard.blue { background: linear-gradient(135deg,#0a66c2,#2d4cb8); }
-  .hookcard.navy2 { background: linear-gradient(135deg,#12253f,#2d4cb8); }
-  .hookcard .htype { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; opacity: 0.85; }
-  .hookcard .hline { font-size: 19px; font-weight: 800; margin: 10px 0; }
-  .hookcard .accent { color: #ffd23f; }
-  .hookcard .script { font-size: 12.5px; opacity: 0.92; margin-top: 8px; }
-  .hookcard .script div { margin-bottom: 4px; }
-  .hookcard .fmt { font-size: 11px; opacity: 0.75; margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 8px; }
-  .chiprow { margin-top: 8px; }
-  .footer {
-    position: fixed; bottom: 0; left: 0; right: 0; background: #0d1b3d; color: #fff;
-    font-size: 12px; text-align: center; padding: 9px; z-index: 200;
-  }
-  .campaign { border-left: 5px solid #c0392b; }
-  .metricchip { display:inline-block; background:#0d1b3d; color:#fff; font-size:12px; font-weight:700; padding:6px 12px; border-radius:16px; margin:4px 6px 0 0; }
-  @media (max-width: 720px) {
-    .grid2, .statbar, .hookgrid { grid-template-columns: 1fr; }
-    .header h1 { font-size: 22px; }
-  }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:#f7f8fa; color:#1a1f36; line-height:1.55; padding:20px 16px 90px; }
+.wrap { max-width:1120px; margin:0 auto; }
+header.brief { background:linear-gradient(135deg,#0d1b3d 0%,#2d4cb8 100%); color:#fff; border-radius:16px; padding:34px 32px; box-shadow:0 12px 34px rgba(13,27,61,.28); }
+header.brief h1 { font-size:26px; font-weight:800; letter-spacing:-.3px; }
+header.brief p { opacity:.9; margin-top:6px; font-size:14px; }
+header.brief .wk { display:inline-block; margin-top:14px; background:rgba(255,255,255,.16); padding:6px 14px; border-radius:20px; font-size:13px; font-weight:700; letter-spacing:.4px; }
+/* sticky nav */
+nav.sticky { position:sticky; top:0; z-index:50; display:flex; flex-wrap:wrap; gap:8px; padding:12px 4px; margin:14px 0 6px; background:rgba(247,248,250,.92); backdrop-filter:blur(8px); }
+nav.sticky a { text-decoration:none; font-size:12.5px; font-weight:700; color:#2d4cb8; background:#fff; border:1px solid #dfe3ee; padding:7px 13px; border-radius:20px; transition:.15s; white-space:nowrap; }
+nav.sticky a:hover { background:#eef1fb; }
+nav.sticky a.active { background:#0d1b3d; color:#fff; border-color:#0d1b3d; }
+section { margin-top:30px; }
+.sec-head { display:flex; align-items:center; gap:13px; margin-bottom:16px; }
+.badge { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:16px; flex-shrink:0; }
+.sec-head h2 { color:#0d1b3d; font-size:20px; font-weight:800; }
+.sub { color:#5a6480; font-size:13px; margin:-8px 0 14px 47px; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+.grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.card { background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.06); padding:18px 18px; }
+.card.lb-purple { border-left:5px solid #7b2d8b; }
+.card.lb-teal { border-left:5px solid #16a085; }
+.card.lb-red { border-left:5px solid #c0392b; }
+.card.lt-teal { border-top:5px solid #16a085; }
+.day { font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:1px; }
+.acct { font-size:22px; font-weight:800; color:#0d1b3d; margin:2px 0 10px; }
+.box { background:#f2f4f8; border-radius:9px; padding:11px 13px; margin:10px 0; font-size:13.5px; }
+.box.contacts .nm { font-weight:700; }
+.box.contacts a { color:#0a66c2; text-decoration:none; word-break:break-word; }
+.pill { display:inline-block; font-size:10px; text-transform:uppercase; letter-spacing:1px; font-weight:700; padding:3px 8px; border-radius:10px; margin:2px 4px 2px 0; }
+.pill.purple { background:#f0e0f4; color:#7b2d8b; }
+.pill.teal { background:#d8f3ee; color:#0f7a63; }
+.pill.red { background:#fbe3e0; color:#a33227; }
+.pill.blue { background:#e2e9fb; color:#2d4cb8; }
+.pill.orange { background:#fbe9d6; color:#a75810; }
+.pill.gray { background:#e8ebf1; color:#5a6480; }
+.callout { border-radius:8px; padding:11px 14px; margin:10px 0; font-size:13.5px; }
+.co-yellow { border-left:4px solid #e0a92b; background:#fdf6e6; }
+.co-green { border-left:4px solid #16a085; background:#e7f7f2; }
+.co-blue { border-left:4px solid #2d4cb8; background:#eaeffb; }
+.co-purple { border-left:4px solid #7b2d8b; background:#f8effb; }
+.co-red { border-left:4px solid #c0392b; background:#fdedeb; }
+.lab { font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.6px; color:#5a6480; display:block; margin-bottom:2px; }
+.muted { color:#8891a6; font-style:italic; font-size:13px; }
+a.src { color:#2d4cb8; font-size:12px; text-decoration:none; font-weight:600; }
+a.src:hover { text-decoration:underline; }
+.trigger-line { font-size:13.5px; margin:4px 0; }
+.usecase-spot { border-left:4px solid #16a085; background:#eafaf6; border-radius:8px; padding:10px 13px; margin-top:10px; font-size:13px; }
+/* stat bar */
+.statbar { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:18px; }
+.stat { background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.06); padding:16px; text-align:center; }
+.stat .num { font-size:30px; font-weight:800; color:#0d1b3d; line-height:1.1; }
+.stat .cap { font-size:11.5px; color:#5a6480; margin-top:5px; }
+/* dark hook cards */
+.hookgrid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.hook { border-radius:12px; padding:18px; color:#fff; }
+.hook.navy { background:linear-gradient(135deg,#0d1b3d,#1c2f63); }
+.hook.blue { background:linear-gradient(135deg,#0a66c2,#083f7a); }
+.hook .htag { display:inline-block; font-size:10px; text-transform:uppercase; letter-spacing:1px; font-weight:800; padding:3px 9px; border-radius:10px; background:rgba(255,255,255,.18); margin-bottom:10px; }
+.hook .hl { font-size:19px; font-weight:800; line-height:1.25; margin-bottom:12px; }
+.hook .hl .accent { color:#ffd24a; }
+.hook .scriptline { font-size:12.5px; margin:5px 0; padding-left:52px; position:relative; opacity:.94; }
+.hook .scriptline b { position:absolute; left:0; color:#ffd24a; font-weight:700; }
+.hook .tip { margin-top:11px; font-size:11.5px; opacity:.8; border-top:1px solid rgba(255,255,255,.2); padding-top:8px; }
+/* bdr */
+.lane { border-radius:8px; padding:10px 13px; margin:9px 0; font-size:13px; }
+.lane.grant { background:#eef2fc; border-left:4px solid #2d4cb8; }
+.lane.sander { background:#f3eefb; border-left:4px solid #7b2d8b; }
+.lane .who { font-weight:800; font-size:11px; text-transform:uppercase; letter-spacing:.6px; margin-bottom:3px; }
+.lane.grant .who { color:#2d4cb8; }
+.lane.sander .who { color:#7b2d8b; }
+.draft { background:#fdedeb; border-left:4px solid #c0392b; border-radius:8px; padding:11px 13px; margin:9px 0; font-size:13px; }
+.draft .subj { font-weight:700; margin-bottom:5px; }
+.chiprow { display:flex; flex-wrap:wrap; gap:7px; margin-top:8px; }
+.chip { background:#eafaf6; color:#0f7a63; font-size:12px; font-weight:600; padding:4px 10px; border-radius:14px; }
+.cheat { display:flex; flex-wrap:wrap; gap:6px; align-items:center; font-size:12px; margin:8px 0; }
+.cheat span { background:#fff; border:1px solid #dfe3ee; padding:5px 9px; border-radius:8px; font-weight:600; }
+.cheat .arw { border:none; color:#8891a6; padding:0 2px; }
+.metricchips { display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+.mchip { background:#0d1b3d; color:#fff; border-radius:10px; padding:9px 13px; font-size:12.5px; font-weight:600; }
+.mchip b { color:#ffd24a; }
+footer.fixed { position:fixed; bottom:0; left:0; right:0; background:#0d1b3d; color:#fff; text-align:center; font-size:12.5px; padding:11px; letter-spacing:.3px; z-index:60; }
+@media (max-width:720px){
+ .grid2,.grid3,.grid4,.statbar,.hookgrid { grid-template-columns:1fr; }
+ header.brief h1 { font-size:21px; }
+ .acct { font-size:19px; }
+}
 </style>
 </head>
 <body>
+<div class="wrap">
+<header class="brief">
+  <h1>Celonis Process Intelligence — Sales Brief</h1>
+  <p>Automotive &amp; Mobility territory · Grant Faulkner · Auto-generated daily</p>
+  <span class="wk">Week 31 · Jul 27–31, 2026 · Group 1 (High Priority)</span>
+</header>
 
-<div class="header">
-  <h1>Celonis Process Intelligence — Sales Intelligence Brief</h1>
-  <p>Automotive &amp; Mobility target accounts · Grant Faulkner, Account Executive</p>
-  <span class="weekchip">Week 31 · July 27–31, 2026 · Group 1 — High Priority</span>
-</div>
-
-<nav class="nav" id="nav">
+<nav class="sticky">
   <a href="#tasks">① Tasks</a>
   <a href="#usecases">② Use Cases</a>
   <a href="#triggers">③ Account Triggers</a>
@@ -123,528 +113,474 @@
   <a href="#bdr">⑦ BDR Tasks</a>
 </nav>
 
-<!-- SECTION 1 -->
+<!-- ===================== SECTION 1 ===================== -->
 <section id="tasks">
-  <div class="sec-title">
-    <div class="badge" style="background:#7b2d8b;">1</div>
-    <h2>This Week's Tasks &nbsp;·&nbsp; Week 31 · Jul 27–31</h2>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#7b2d8b">1</div><h2>This Week's Tasks</h2></div>
+  <div class="sub">Week 31 · Jul 27–31 · Dana · Gentherm · Adient · Yazaki NA · Aisin</div>
   <div class="grid2">
 
     <!-- MONDAY DANA -->
-    <div class="card s1card">
-      <h3 class="day" style="color:#7b2d8b;">Monday · 🔥 LIVE WARM INTRO</h3>
-      <h3 class="acct">Dana Incorporated</h3>
-      <div class="box">
-        <div class="contact"><b>Kevin Williams</b> — Leading Eaton Mobility integration <span class="pill" style="background:#e9f7f2;color:#16a085;">GRANT'S CONTACT (warm intro via Seth Metzger)</span></div>
-        <div class="contact"><b>Byron Foster</b> — CEO (eff. July 1, 2026)</div>
-        <div class="contact"><b>R. Bruce McDonald</b> — Executive Chairman, owns integration &amp; synergy realization</div>
-        <div class="contact"><b>Timothy Kraus</b> — CFO</div>
-        <div class="contact muted">LinkedIn search: linkedin.com/in "Dana Incorporated" integration OR "Eaton Mobility" director</div>
-        <span class="pill" style="background:#f0e6f5;color:#7b2d8b;">📌 Warm — advance, don't cold-connect</span>
+    <div class="card lb-purple">
+      <div class="day" style="color:#7b2d8b">Monday</div>
+      <div class="acct">Dana Incorporated</div>
+      <span class="pill green" style="background:#e7f7f2;color:#0f7a63">🔥 Live warm-intro thread</span>
+      <div class="box contacts">
+        <div class="nm">Byron Foster — CEO (effective Jul 1, 2026)</div>
+        <div>R. Bruce McDonald now Chairman of the Board · CFO Timothy Kraus (since 2021)</div>
+        <div class="nm" style="margin-top:6px">Kevin Williams — leading Eaton Mobility integration <span class="pill purple">Grant's contact</span></div>
+        <div>Warm intro via Seth Metzger · <a href="https://www.dana.com/newsroom/press-releases/dana-announces-leadership-transition-and-actions-to-accelerate-value-creation/">Leadership transition release</a></div>
+        <span class="pill purple">📌 Connect on LinkedIn</span>
       </div>
-      <div style="margin-top:12px;font-size:14px;">
-        <b>Triggers:</b> Dana + Eaton Mobility combine — <b>$5.1B</b> deal, ~$11B pro-forma revenue, close Q1 2027. Mgmt targets <b>$250M run-rate synergies within 24 months</b> via purchasing, manufacturing &amp; engineering optimization. Byron Foster CEO / McDonald Exec Chairman as of July 1.
-        <div class="src"><a href="https://www.dana.com/newsroom/press-releases/dana-incorporated-announces-agreement-to-combine-with-eatons-mobility-business-strengthens-danas-position-as-a-leading-global-powertrain-systems-provider/">Source: Dana press release</a> · <a href="https://www.ccjdigital.com/business/mergers-acquisitions/article/15827417/dana-and-eaton-to-combine-vehicle-businesses-in-51b-deal">CCJ</a></div>
-      </div>
-      <div class="callout" style="border-color:#7b2d8b;background:#f7f0fa;">
-        <b>Suggested action:</b> LIVE thread — advance the Kevin Williams conversation. Deal thesis: the integration office needs a process baseline of BOTH companies before workstreams lock. Bring the $250M synergy target into the framing (purchasing + manufacturing are exactly where process intelligence proves synergy capture). Keep peer proof current: Gentherm/Modine PT and Dauch/Dowlais integrations.
-      </div>
-      <div class="callout" style="border-color:#16a085;background:#e9f7f2;">
-        <b>Use Case Spotlight — M&amp;A Integration Baseline:</b> thyssenkrupp Rasselstein ran 50+ use cases across 10 processes on one platform — the model for baselining a merged Dana+Eaton estate before synergy workstreams start.
-      </div>
+      <div class="lab">Triggers</div>
+      <div class="trigger-line">• New CEO Byron Foster took over Jul 1, 2026 — fresh mandate window. <a class="src" href="https://www.dana.com/newsroom/press-releases/dana-announces-leadership-transition-and-actions-to-accelerate-value-creation/">Source</a></div>
+      <div class="trigger-line">• ~$5.1B combination with Eaton's Mobility business (Reverse Morris Trust), closing Q1 2027; $250M run-rate synergies targeted within 24 mo. <a class="src" href="https://www.dana.com/newsroom/press-releases/dana-incorporated-announces-agreement-to-combine-with-eatons-mobility-business-strengthens-danas-position-as-a-leading-global-powertrain-systems-provider/">Source</a></div>
+      <div class="trigger-line">• Q2 2026 earnings scheduled Aug 6, 2026. <a class="src" href="https://www.stocktitan.net/news/DAN/dana-incorporated-to-announce-2026-second-quarter-financial-results-1ck472ur34rx.html">Source</a></div>
+      <div class="callout co-purple"><span class="lab">Suggested action — ADVANCE THE EVAL, not cold cadence</span>Book the 30-min technical validation for the Williams integration-office thread. Frame Celonis as the pre-close process baseline that captures both Dana's and Eaton Mobility's as-is flows before workstreams lock — the $250M synergy target needs a fact base, not a slide. Reference the Dauch/Dowlais and Gentherm/Modine integrations as live peer proof (both in territory).</div>
+      <div class="usecase-spot"><b>Use Case Spotlight — M&A / ERP Integration Baseline.</b> A $5.1B combine with a 24-month synergy clock is exactly where a process-mining baseline de-risks integration — you cannot harmonize what you can't see across two ERP estates.</div>
     </div>
 
     <!-- TUESDAY GENTHERM -->
-    <div class="card s1card">
-      <h3 class="day" style="color:#7b2d8b;">Tuesday</h3>
-      <h3 class="acct">Gentherm</h3>
-      <div class="box">
-        <div class="contact"><b>Bill Presley</b> — President &amp; CEO (joined Jan 2025)</div>
-        <div class="contact"><b>Jonathan C. Douyard</b> — CFO / EVP &amp; Treasurer — <b>leads finance AND global IT operations</b> (no dedicated CIO seat)</div>
-        <div class="contact"><b>Vishnu Sundaram</b> — CTO &amp; SVP (since Sept 2023)</div>
-        <span class="pill" style="background:#f0e6f5;color:#7b2d8b;">📌 Connect on LinkedIn</span>
+    <div class="card lb-purple">
+      <div class="day" style="color:#7b2d8b">Tuesday</div>
+      <div class="acct">Gentherm</div>
+      <div class="box contacts">
+        <div class="nm">Jon Douyard — EVP, CFO &amp; Treasurer (also leads global IT)</div>
+        <div><a href="https://ir.gentherm.com/corporate-governance/leadership-team">Leadership team</a></div>
+        <div class="nm" style="margin-top:6px">Bill Presley — President &amp; CEO (Jan 2025) · Vishnu Sundaram — CTO/SVP</div>
+        <span class="pill purple">📌 Connect on LinkedIn</span>
       </div>
-      <div style="margin-top:12px;font-size:14px;">
-        <b>Triggers:</b> Q2 2026 earnings (Jul 23) — <b>record revenue $416M, +11% YoY</b>; $0.55/share merger &amp; restructuring costs tied to pending <b>Modine Performance Technologies</b> combination (targeted to close early Q4 2026); new <b>$400M buyback</b> (nearly 3x prior).
-        <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/23/3331951/0/en/Gentherm-Reports-2026-Second-Quarter-Results-and-Announces-a-New-Increased-Stock-Repurchase-Authorization.html">Source: Gentherm Q2 2026 results</a></div>
-      </div>
-      <div class="callout" style="border-color:#7b2d8b;background:#f7f0fa;">
-        <b>Suggested action:</b> Douyard owns both finance and IT — the single best entry point. Congratulate on record Q2, then bridge to integration-readiness for the Modine PT close: a process baseline de-risks the synergy case the Street is now watching post-buyback.
-      </div>
-      <div class="callout" style="border-color:#16a085;background:#e9f7f2;">
-        <b>Use Case Spotlight — Supply Chain &amp; Inventory:</b> MAHLE (automotive supplier) manages supply chain and forecasts inventory in real time with Celonis — directly relevant as Gentherm folds Modine PT's thermal supply base in.
-      </div>
+      <div class="lab">Triggers</div>
+      <div class="trigger-line">• Q2 2026: record product revenue $416M (+11% YoY); GAAP EPS hit by ~$0.55/share of merger &amp; restructuring costs tied to the <b>pending Modine acquisition</b>. <a class="src" href="https://www.globenewswire.com/news-release/2026/07/23/3331951/0/en/Gentherm-Reports-2026-Second-Quarter-Results-and-Announces-a-New-Increased-Stock-Repurchase-Authorization.html">Source</a></div>
+      <div class="trigger-line">• New $400M buyback (nearly 3x prior); $800M committed financing incl. $550M revolver to fund the Modine deal. <a class="src" href="https://www.stocktitan.net/news/THRM/gentherm-reports-2026-second-quarter-results-and-announces-a-new-kftt43oa8bre.html">Source</a></div>
+      <div class="callout co-purple"><span class="lab">Suggested action</span>CFO Douyard runs both finance and IT — a single-owner entry point. Email referencing the Q2 restructuring charge + Modine integration: position Celonis as the touchless-invoicing / days-to-close lever that funds the integration and the baseline that de-risks merging two supplier estates. Bridge to the Gentherm↔Modine (thermal) integration as an in-territory story.</div>
+      <div class="usecase-spot"><b>Use Case Spotlight — Accounts Payable / P2P.</b> Fits Gentherm precisely: CFO owns IT, restructuring pressure is public, and AP touchless-rate gains free cash to service the Modine financing.</div>
     </div>
 
     <!-- WEDNESDAY ADIENT -->
-    <div class="card s1card">
-      <h3 class="day" style="color:#7b2d8b;">Wednesday · 📍 Today</h3>
-      <h3 class="acct">Adient</h3>
-      <div class="box">
-        <div class="contact"><b>Jerome Dorlack</b> — President &amp; CEO</div>
-        <div class="contact"><b>Mark Oswald</b> — CFO (verify on Adient IR before citing)</div>
-        <div class="contact muted">No CIO confirmed via web search — try: linkedin.com/in "Adient" CIO OR "VP Digital" OR "VP IT"</div>
-        <span class="pill" style="background:#f0e6f5;color:#7b2d8b;">📌 Connect on LinkedIn</span>
+    <div class="card lb-purple">
+      <div class="day" style="color:#7b2d8b">Wednesday</div>
+      <div class="acct">Adient</div>
+      <div class="box contacts">
+        <div class="nm">Jerome Dorlack — President &amp; CEO (since Jan 2024)</div>
+        <div>CFO Mark Oswald · <a href="https://simplywall.st/stocks/us/automobiles/nyse-adnt/adient/management">Management</a></div>
+        <span class="pill purple">📌 Connect on LinkedIn</span>
       </div>
-      <div style="margin-top:12px;font-size:14px;">
-        <b>Triggers:</b> Q2 FY26 — <b>$3.9B revenue, +7% YoY</b>; <b>raised FY26 guidance</b> to ~$14.8B revenue / ~$885M adj. EBITDA. <b>Q3 FY26 results call Aug 5, 2026.</b> Ongoing restructuring (China mix shift, European restructuring), plus temporary customer-driven production inefficiencies flagged.
-        <div class="src"><a href="https://www.stocktitan.net/news/ADNT/adient-to-discuss-q3-fiscal-2026-financial-results-on-august-5-toegiv1odhkm.html">Source: Adient Q3 FY26 call notice</a> · <a href="https://www.fool.com/earnings/call-transcripts/2026/05/07/adient-adnt-q2-2026-earnings-call-transcript/">Q2 transcript</a></div>
-      </div>
-      <div class="callout" style="border-color:#7b2d8b;background:#f7f0fa;">
-        <b>Suggested action:</b> Time outreach ahead of the Aug 5 earnings call. "Production inefficiencies" and active restructuring are a cost-transformation opening — process intelligence quantifies where margin leaks in launch and plant variance. Frame as helping the restructuring story land with investors.
-      </div>
-      <div class="callout" style="border-color:#16a085;background:#e9f7f2;">
-        <b>Use Case Spotlight — Procure-to-Pay / AP:</b> Renault Group generated €15M in the first 12 months, starting with Accounts Payable then expanding across P2P — a proven automotive cost-recovery pattern for a restructuring Adient.
-      </div>
+      <div class="lab">Triggers</div>
+      <div class="trigger-line">• Q2 FY2026 in line with guidance; modestly <b>raised full-year outlook</b> (revenue, adj. EBITDA, FCF) despite China seasonality and temporary program inefficiencies. <a class="src" href="https://www.fool.com/earnings/call-transcripts/2026/05/07/adient-adnt-q2-2026-earnings-call-transcript/">Source</a></div>
+      <div class="trigger-line">• Ongoing restructuring; active discussions with key customers on the future of specific JIT manufacturing sites. <a class="src" href="https://www.tickerreport.com/banking-finance/13431809/adient-q2-earnings-call-highlights.html">Source</a></div>
+      <div class="callout co-purple"><span class="lab">Suggested action</span>Anchor to "temporary production inefficiencies on key programs" from the earnings call. Cold outreach to CFO Oswald / COO layer: Celonis surfaces JIT/plant process variants so restructuring decisions are data-led rather than gut-led. Ask which programs are absorbing the inefficiency — a discovery hook, not a pitch.</div>
+      <div class="usecase-spot"><b>Use Case Spotlight — Manufacturing / JIT variant analysis.</b> A seat maker running JIT with named program inefficiencies is the textbook case for plant-level process-variant comparison.</div>
     </div>
 
     <!-- THURSDAY YAZAKI -->
-    <div class="card s1card">
-      <h3 class="day" style="color:#7b2d8b;">Thursday · 🆕 NEW LEADER</h3>
-      <h3 class="acct">Yazaki North America</h3>
-      <div class="box">
-        <div class="contact"><b>Jerry Moyers</b> — President &amp; CEO (eff. June 22, 2026) — 30 yrs at Yazaki across finance, supply chain, ops, engineering</div>
-        <div class="contact muted">No CIO confirmed via web search — try: linkedin.com/in "Yazaki North America" CIO OR "IT Director" OR "digital"</div>
-        <span class="pill" style="background:#f0e6f5;color:#7b2d8b;">📌 Connect on LinkedIn</span>
+    <div class="card lb-purple">
+      <div class="day" style="color:#7b2d8b">Thursday</div>
+      <div class="acct">Yazaki North America</div>
+      <div class="box contacts">
+        <div class="nm">Jerry Moyers — President &amp; CEO (effective Jun 22, 2026)</div>
+        <div>30+ yrs at Yazaki; known for new-business wins, launches &amp; manufacturing optimization. <a href="https://www.yazaki-na.com/News/1991/jerry-moyers-appointed-president-ceo-of-yazaki-north-america-inc">Appointment release</a></div>
+        <span class="pill purple">📌 Connect on LinkedIn</span>
+        <div class="muted" style="margin-top:6px">No named CIO found via web search — try: site:linkedin.com/in "Yazaki North America" CIO OR "VP IT" OR "digital"</div>
       </div>
-      <div style="margin-top:12px;font-size:14px;">
-        <b>Triggers:</b> <b>New President &amp; CEO Jerry Moyers</b> (June 22, 2026) — his supply-chain / operations pedigree makes process intelligence a natural first-100-days lever. Also: Yazaki NA + MOTER Technologies partnership accelerating AI-driven DX in mobility.
-        <div class="src"><a href="https://www.yazaki-na.com/News/1991/jerry-moyers-appointed-president-ceo-of-yazaki-north-america-inc">Source: Yazaki NA — Moyers appointment</a></div>
-      </div>
-      <div class="callout" style="border-color:#7b2d8b;background:#f7f0fa;">
-        <b>Suggested action:</b> Classic new-leader play. Congratulate Moyers, note his supply-chain background, and offer a fast baseline of NA operations to inform his early priorities. New leaders buy programs that show velocity — position a 60–90 day quick win.
-      </div>
-      <div class="callout" style="border-color:#16a085;background:#e9f7f2;">
-        <b>Use Case Spotlight — Supply Chain &amp; Inventory:</b> MAHLE's real-time inventory and supply-chain resilience story maps to Yazaki's wire-harness supply complexity — the exact terrain Moyers knows.
-      </div>
+      <div class="lab">Triggers</div>
+      <div class="trigger-line">• <b>New President &amp; CEO Jerry Moyers</b> named effective Jun 22, 2026 — exec-transition window, and his stated focus is manufacturing optimization. <a class="src" href="https://www.yazaki-na.com/News/1991/jerry-moyers-appointed-president-ceo-of-yazaki-north-america-inc">Source</a></div>
+      <div class="callout co-purple"><span class="lab">Suggested action</span>Congratulate Moyers on the appointment and bridge to his manufacturing-optimization mandate: wire-harness assembly is labor- and variant-heavy: Celonis makes plant-to-plant process variance and material flow visible. Low-friction ask: how he's prioritizing NA plant standardization in his first 100 days.</div>
+      <div class="usecase-spot"><b>Use Case Spotlight — Supply Chain / Inventory visibility.</b> A wire-harness supplier with a new optimization-focused CEO maps to MAHLE-style inventory and material-flow transparency.</div>
     </div>
 
     <!-- FRIDAY AISIN -->
-    <div class="card s1card">
-      <h3 class="day" style="color:#7b2d8b;">Friday · 🆕 NEW CEO</h3>
-      <h3 class="acct">Aisin World Corp. of America</h3>
-      <div class="box">
-        <div class="contact"><b>Hiromasa Okawa</b> — CEO of AWA (April 2026) — ex-Chief Production Reformation Officer, AISIN Group Production division</div>
-        <div class="contact"><b>Jeff Nordman</b> — EVP, AWA Operations</div>
-        <div class="contact muted">Scott Turpin retired as President/COO (now executive advisor). No CIO confirmed — try: linkedin.com/in "Aisin" North America IT OR digital</div>
-        <span class="pill" style="background:#f0e6f5;color:#7b2d8b;">📌 Connect on LinkedIn</span>
+    <div class="card lb-purple">
+      <div class="day" style="color:#7b2d8b">Friday</div>
+      <div class="acct">Aisin World Corp. of America</div>
+      <div class="box contacts">
+        <div class="nm">Hiromasa Okawa — CEO, AWA (effective Apr 2026)</div>
+        <div>Replaced Kazuto Koyama (returned to Japan). Scott Turpin retired as Pres/COO → executive advisor. <a href="https://www.aisinworld.com/2026/04/01/executive-changes-announced-at-aisin-world-corp-of-america/">Exec-changes release</a></div>
+        <span class="pill purple">📌 Connect on LinkedIn</span>
       </div>
-      <div style="margin-top:12px;font-size:14px;">
-        <b>Triggers:</b> <b>New CEO Hiromasa Okawa</b> (April 2026) relocated to Seymour — his background is <b>production reformation / manufacturing optimization</b>, a direct fit for OEE and process-variance use cases. Leadership transition (Turpin → executive advisor) opens a fresh mandate.
-        <div class="src"><a href="https://www.aisinworld.com/2026/04/01/executive-changes-announced-at-aisin-world-corp-of-america/">Source: AWA executive changes</a></div>
-      </div>
-      <div class="callout" style="border-color:#7b2d8b;background:#f7f0fa;">
-        <b>Suggested action:</b> Lead with the CEO's own language: production reformation. A COO/VP-Manufacturing OEE conversation (scrap/downtime, plant variance) speaks to Okawa's mandate. Reference his production-division pedigree as the reason process intelligence lands now.
-      </div>
-      <div class="callout" style="border-color:#16a085;background:#e9f7f2;">
-        <b>Use Case Spotlight — Manufacturing / Inventory:</b> MAHLE inventory management shows a Tier-1 supplier converting production data into resilience — the reformation outcome Okawa is chartered to deliver.
-      </div>
+      <div class="lab">Triggers</div>
+      <div class="trigger-line">• <b>New CEO Hiromasa Okawa</b> installed Apr 2026; Pres/COO Scott Turpin retired to advisory — a leadership reset at the NA holding company. <a class="src" href="https://www.aisinworld.com/2026/04/01/executive-changes-announced-at-aisin-world-corp-of-america/">Source</a></div>
+      <div class="callout co-purple"><span class="lab">Suggested action</span>New-leader outreach to Okawa (via NA operations/IT leaders beneath him). Frame: Aisin's broad drivetrain/component portfolio across many NA plants is where inventory and supply-chain visibility compounds. Ask what operational priorities he's setting for North America under the new structure.</div>
+      <div class="usecase-spot"><b>Use Case Spotlight — Supply Chain / Inventory.</b> A multi-plant Tier-1 component maker under new NA leadership is a clean fit for group-wide inventory reduction like MAHLE's 20%.</div>
     </div>
 
   </div>
 </section>
 
-<!-- SECTION 2 -->
+<!-- ===================== SECTION 2 ===================== -->
 <section id="usecases">
-  <div class="sec-title">
-    <div class="badge" style="background:#16a085;">2</div>
-    <h2>Evergreen Celonis Use Cases</h2>
-  </div>
-  <div class="grid2">
-    <div class="card">
-      <span class="tag" style="background:#16a085;">Procure-to-Pay / AP</span>
-      <h3 style="font-size:18px;margin-top:8px;">Procure-to-Pay &amp; Accounts Payable Automation</h3>
-      <p style="font-size:14px;margin-top:6px;">Celonis surfaces maverick buying, blocked invoices, and missed discounts across P2P. Renault Group generated <b>€15M in the first 12 months</b>, starting with quick AP wins then expanding to full Procure-to-Pay via a structured Center of Excellence.</p>
-      <div class="chiprow">
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Stellantis</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Adient</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Yazaki NA</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Aisin</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Dana</span>
-      </div>
-      <p style="font-size:13px;margin-top:8px;"><b>Why it applies:</b> Every large Tier-1 runs high-volume supplier AP; touchless-invoicing and days-to-close gains are the fastest CFO-visible ROI in a restructuring year.</p>
-      <div class="src"><a href="https://www.celonis.com/solutions/stories/renault-procure-to-pay">Source: Renault Group P2P story</a></div>
+  <div class="sec-head"><div class="badge" style="background:#16a085">2</div><h2>Celonis Use Cases</h2></div>
+  <div class="sub">Evergreen Use Cases — sourced from celonis.com customer stories, mapped to territory</div>
+  <div class="grid3">
+
+    <div class="card lb-teal">
+      <h3 style="font-size:18px;color:#0d1b3d">Accounts Payable / Procure-to-Pay</h3>
+      <span class="pill teal">Finance</span>
+      <p style="font-size:13.5px;margin:8px 0">Celonis maps the true AP and P2P flow to eliminate duplicate payments, capture early-payment discounts, raise touchless-invoice rates and unlock working capital. Renault Group generated €15M in the first 12 months off a structured Center of Excellence; STADA and Florida Crystals unlocked millions and accelerated their S/4HANA moves.</p>
+      <div class="chiprow"><span class="chip">Gentherm</span><span class="chip">Dana</span><span class="chip">Adient</span><span class="chip">Stellantis Financial Svcs</span></div>
+      <p style="font-size:13px;margin:8px 0"><b>Why it applies:</b> Every account under restructuring or M&amp;A financing pressure (Gentherm/Modine, Dana/Eaton) needs cash-cycle wins the CFO can bank this year.</p>
+      <a class="src" href="https://www.celonis.com/solutions/stories/renault-procure-to-pay">Renault P2P story →</a>
     </div>
 
-    <div class="card">
-      <span class="tag" style="background:#16a085;">Supply Chain</span>
-      <h3 style="font-size:18px;margin-top:8px;">Supply Chain &amp; Inventory Management</h3>
-      <p style="font-size:14px;margin-top:6px;">MAHLE uses Celonis to proactively manage its supply chain and forecast inventory in real time, fulfilling customer requests faster and becoming more resilient to external disruption. The supplier began with AP, procurement and order management before turning to inventory.</p>
-      <div class="chiprow">
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Denso</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Aisin</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Gentherm</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Dana</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Cooper Standard</span>
-      </div>
-      <p style="font-size:13px;margin-top:8px;"><b>Why it applies:</b> Auto Tier-1s live and die on delivery reliability and working capital; real-time inventory visibility is the resilience story new leaders (Okawa, Moyers) want quickly.</p>
-      <div class="src"><a href="https://www.celonis.com/solutions/stories/mahle-inventory-management">Source: MAHLE inventory story</a></div>
+    <div class="card lb-teal">
+      <h3 style="font-size:18px;color:#0d1b3d">Inventory &amp; Supply Chain Management</h3>
+      <span class="pill teal">Operations</span>
+      <p style="font-size:13.5px;margin:8px 0">Celonis brings end-to-end transparency to inventory and material flow, with Action Flows alerting planners to impending overstocks and shortages. Automotive supplier MAHLE achieved a <b>20% group-wide inventory reduction</b> while protecting delivery reliability.</p>
+      <div class="chiprow"><span class="chip">Aisin</span><span class="chip">Yazaki NA</span><span class="chip">Denso</span><span class="chip">Dana</span></div>
+      <p style="font-size:13px;margin:8px 0"><b>Why it applies:</b> Tier-1 component and harness makers (Aisin, Yazaki, Denso) run multi-plant material flows where inventory-visibility gains compound fastest.</p>
+      <a class="src" href="https://www.celonis.com/solutions/stories/mahle-inventory-management">MAHLE inventory story →</a>
     </div>
 
-    <div class="card">
-      <span class="tag" style="background:#16a085;">M&amp;A Integration</span>
-      <h3 style="font-size:18px;margin-top:8px;">Multi-Process Transformation &amp; M&amp;A Integration Baseline</h3>
-      <p style="font-size:14px;margin-top:6px;">thyssenkrupp Rasselstein runs Celonis live across 10 processes and <b>more than 50 use cases</b> — P2P, Order-to-Cash, inventory, warehouse, AR and more — on one platform. The pattern: a single process backbone to baseline and standardize a complex operation.</p>
-      <div class="chiprow">
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Dana (Eaton)</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Gentherm (Modine)</span>
-        <span class="pill" style="background:#e9f7f2;color:#16a085;">Piston (multi-ERP)</span>
-      </div>
-      <p style="font-size:13px;margin-top:8px;"><b>Why it applies:</b> Both Dana and Gentherm are mid-integration; a merged-estate baseline is exactly how process intelligence proves and accelerates announced synergy targets.</p>
-      <div class="src"><a href="https://www.celonis.com/customer/thyssenkrupp-rasselstein-supply-chain/">Source: thyssenkrupp Rasselstein story</a></div>
+    <div class="card lb-teal">
+      <h3 style="font-size:18px;color:#0d1b3d">M&amp;A / ERP Transformation Baseline</h3>
+      <span class="pill teal">Transformation</span>
+      <p style="font-size:13.5px;margin:8px 0">Before harmonizing two merged organizations, Celonis captures the as-is process reality across both ERP estates so integration teams target real variance, not assumptions. Forrester's TEI study found Celonis customers hit <b>383% ROI and payback in 6 months</b>; global customers have realized $11.3B in value.</p>
+      <div class="chiprow"><span class="chip">Dana + Eaton</span><span class="chip">Gentherm + Modine</span><span class="chip">Dauch + Dowlais</span></div>
+      <p style="font-size:13px;margin:8px 0"><b>Why it applies:</b> Three active mergers in this territory each carry a synergy clock — the process baseline is the fact base that makes those targets real.</p>
+      <a class="src" href="https://www.celonis.com/solutions/manufacturing">Celonis for Manufacturing →</a>
     </div>
+
   </div>
 </section>
 
-<!-- SECTION 3 -->
+<!-- ===================== SECTION 3 ===================== -->
 <section id="triggers">
-  <div class="sec-title">
-    <div class="badge" style="background:#16a085;">3</div>
-    <h2>Target Account Buying Triggers</h2>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#16a085">3</div><h2>Target Account Buying Triggers</h2></div>
+  <div class="sub">Top-10 priority accounts · signal-anchored</div>
   <div class="grid2">
 
-    <div class="card s3card">
-      <span class="tag" style="background:#16a085;">Restructuring · AI</span>
-      <h3 style="font-size:20px;font-weight:800;margin-top:8px;">Stellantis North America</h3>
-      <p style="font-size:14px;"><b>What happened:</b> "FaSTLAne 2030" — a $70B restructuring plan with 60 new models, expanded AI (120+ applications live), and a target to cut development cycles from 40 to <b>24 months</b>. Filosa has shifted power to North America.</p>
-      <p style="font-size:14px;"><b>Business priority:</b> Speed, cost-competitiveness, NA turnaround.</p>
-      <p style="font-size:14px;"><b>Celonis angle:</b> Cycle-time compression and 120+ AI apps need a process/context layer to run reliably — the AI Transformation Office's exact problem.</p>
-      <div class="callout outreach"><i>Hook: "As you compress development to 24 months, how are the AI office's 120+ apps getting a shared view of how work actually flows across functions?"</i></div>
-      <p style="font-size:12px;color:#9aa0b0;margin-top:6px;">⚠️ Engagement guardrail: GAM (Thierry) owns Thiele/Quentin. Grant's lane = NA function AI leads &amp; managers below them. Never target Thiele/Quentin directly.</p>
-      <div class="src"><a href="https://www.constellationr.com/insights/news/how-stellantis-aims-leverage-ai-technology-turnaround">Source: Constellation Research</a></div>
+    <div class="card lt-teal">
+      <h3 style="font-size:20px;font-weight:800;color:#0d1b3d">Stellantis North America <span class="pill teal">Strategy / AI</span></h3>
+      <p class="trigger-line"><span class="lab">What happened</span>FaSTLane 2030 — a €60B five-year plan (May 2026) — plus a "Factory Booster Day" showcasing AI-driven manufacturing scaling across 90 global plants. Tim Fallon (SVP, Global Head of Stellantis Industrial System &amp; NA Manufacturing, ex-Rivian) is embedding a common operating system.</p>
+      <p class="trigger-line"><span class="lab">Business priority</span>Scale AI/continuous-improvement across the plant network at speed.</p>
+      <p class="trigger-line"><span class="lab">Celonis angle</span>An AI-at-scale mandate fails without a process context layer — "no AI without PI." PI grounds Factory-Booster POCs in real execution data.</p>
+      <div class="callout co-green"><i>Hook: With 90 plants scaling AI POCs, how are you making sure each one is solving a validated process bottleneck rather than a hypothesis?</i></div>
+      <div class="callout co-red" style="font-size:12.5px"><b>Guardrail:</b> GAM (Thierry) owns Thiele &amp; Quentin — do NOT target them. Grant's lane = US-based AI-office leads in other functions (Tim Fallon, Mark Silk, Diana Wagner, Lou Gasevski, Nick Lang, Alison Jones, Bonnie Ven Etten, Xavier Chereau) + NA supply-chain people below Thiele/Quentin. Coordinate with Thierry before any touch near the AI office.</div>
+      <a class="src" href="https://www.automotivemanufacturingsolutions.com/smart-factory/stellantis-factory-booster-day-showcases-ai-driven-manufacturing-innovations/2130550">Source</a>
     </div>
 
-    <div class="card s3card">
-      <span class="tag" style="background:#16a085;">M&amp;A · $5.1B</span>
-      <h3 style="font-size:20px;font-weight:800;margin-top:8px;">Dana Incorporated</h3>
-      <p style="font-size:14px;"><b>What happened:</b> Combining with Eaton's Mobility business ($5.1B; ~$11B pro-forma revenue). Targets <b>$250M run-rate synergies within 24 months</b> of a Q1 2027 close. New CEO Byron Foster / Exec Chairman McDonald as of July 1.</p>
-      <p style="font-size:14px;"><b>Business priority:</b> Integration &amp; synergy realization (purchasing, manufacturing, engineering).</p>
-      <p style="font-size:14px;"><b>Celonis angle:</b> Synergy capture is a process problem — baseline both estates, then measure standardization against the $250M target.</p>
-      <div class="callout outreach"><i>Hook (LIVE — Kevin Williams): "Before the integration workstreams lock, what's the plan to baseline both companies' core processes so synergy claims are measurable?"</i></div>
-      <div class="src"><a href="https://www.dana.com/newsroom/press-releases/dana-incorporated-announces-agreement-to-combine-with-eatons-mobility-business-strengthens-danas-position-as-a-leading-global-powertrain-systems-provider/">Source: Dana press release</a></div>
+    <div class="card lt-teal">
+      <h3 style="font-size:20px;font-weight:800;color:#0d1b3d">Dauch Corporation <span class="pill teal">M&amp;A Complete</span></h3>
+      <p class="trigger-line"><span class="lab">What happened</span>Completed the ~$1.7B acquisition of Dowlais (GKN Automotive + GKN Powder Metallurgy) on Feb 3, 2026; rebranded from American Axle to Dauch Corporation. Now 24 countries, 175+ locations, led by David C. Dauch (Chairman/CEO).</p>
+      <p class="trigger-line"><span class="lab">Business priority</span>Integrate two global engineering organizations under "Built to Perform."</p>
+      <p class="trigger-line"><span class="lab">Celonis angle</span>Post-close is the highest-value moment for a process baseline: harmonize P2P, O2C and manufacturing across the merged estate before systems lock.</p>
+      <div class="callout co-green"><i>Hook: Now that Dowlais is closed, how are you establishing a single process fact-base across the combined 175 sites before you standardize systems?</i></div>
+      <a class="src" href="https://www.aam.com/suppliers/doing-business-with-aam/dauch-corporation-(formerly-aam)-and-dowlais-group-(gkn)-combination-complete">Source</a>
     </div>
 
-    <div class="card s3card">
-      <span class="tag" style="background:#16a085;">Earnings · M&amp;A</span>
-      <h3 style="font-size:20px;font-weight:800;margin-top:8px;">Gentherm</h3>
-      <p style="font-size:14px;"><b>What happened:</b> Q2 2026 record revenue $416M (+11%); $0.55/share merger &amp; restructuring costs; Modine Performance Technologies combination targeted to close early Q4 2026; new $400M buyback.</p>
-      <p style="font-size:14px;"><b>Business priority:</b> Deliver the Modine PT integration and defend margins post-buyback.</p>
-      <p style="font-size:14px;"><b>Celonis angle:</b> A process baseline de-risks the integration synergy case; CFO Douyard owns both finance and IT.</p>
-      <div class="callout outreach"><i>Hook: "Record Q2 and a bigger buyback raise the bar on the Modine synergy story — how are you baselining the combined ops to prove it?"</i></div>
-      <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/23/3331951/0/en/Gentherm-Reports-2026-Second-Quarter-Results-and-Announces-a-New-Increased-Stock-Repurchase-Authorization.html">Source: Gentherm Q2 2026</a></div>
+    <div class="card lt-teal">
+      <h3 style="font-size:20px;font-weight:800;color:#0d1b3d">Denso International America <span class="pill teal">Reorg / New CTO</span></h3>
+      <p class="trigger-line"><span class="lab">What happened</span>Reorganized its NA structure effective Jan 1, 2026. Andy Clemence named CTO (a newly created role) and head of NA engineering + Green Business Group; Stephen Milam added NA Chief Strategy Officer.</p>
+      <p class="trigger-line"><span class="lab">Business priority</span>Faster decision-making and aligned business units across North America.</p>
+      <p class="trigger-line"><span class="lab">Celonis angle</span>A new CTO role and a reorg are a natural moment to instrument how work actually flows across the realigned units.</p>
+      <div class="callout co-green"><i>Hook: With the new NA structure live since January, where are hand-offs between the realigned units costing you the most cycle time?</i></div>
+      <a class="src" href="https://www.prnewswire.com/news-releases/denso-updates-north-american-organizational-structure-leader-roles-302682947.html">Source</a>
     </div>
 
-    <div class="card s3card">
-      <span class="tag" style="background:#16a085;">Earnings · Restructuring</span>
-      <h3 style="font-size:20px;font-weight:800;margin-top:8px;">Adient</h3>
-      <p style="font-size:14px;"><b>What happened:</b> Q2 FY26 revenue $3.9B (+7%); FY26 guidance raised to ~$14.8B / ~$885M EBITDA; Q3 call Aug 5, 2026; flagged production inefficiencies and ongoing China/Europe restructuring.</p>
-      <p style="font-size:14px;"><b>Business priority:</b> Margin recovery through restructuring; smoother launches.</p>
-      <p style="font-size:14px;"><b>Celonis angle:</b> Quantify plant/launch variance and AP leakage to feed the restructuring narrative investors want.</p>
-      <div class="callout outreach"><i>Hook: "Ahead of Aug 5 — which plants and launches are driving the production inefficiency you called out, and how are you isolating it?"</i></div>
-      <div class="src"><a href="https://www.stocktitan.net/news/ADNT/adient-to-discuss-q3-fiscal-2026-financial-results-on-august-5-toegiv1odhkm.html">Source: Adient Q3 FY26 notice</a></div>
+    <div class="card lt-teal">
+      <h3 style="font-size:20px;font-weight:800;color:#0d1b3d">Dana Incorporated <span class="pill teal">New CEO + M&amp;A</span></h3>
+      <p class="trigger-line"><span class="lab">What happened</span>Byron Foster became CEO Jul 1, 2026 (McDonald → Chairman); ~$5.1B Eaton Mobility combination closing Q1 2027 with $250M synergy target. Q2 earnings Aug 6.</p>
+      <p class="trigger-line"><span class="lab">Business priority</span>Deliver integration synergies while a new CEO sets direction.</p>
+      <p class="trigger-line"><span class="lab">Celonis angle</span>Pre-close process baseline of both companies — live warm-intro thread with Kevin Williams (integration lead).</p>
+      <div class="callout co-green"><i>Hook: With a 24-month synergy clock, what's your plan to baseline both companies' processes before integration workstreams lock?</i></div>
+      <a class="src" href="https://www.dana.com/newsroom/press-releases/dana-incorporated-announces-agreement-to-combine-with-eatons-mobility-business-strengthens-danas-position-as-a-leading-global-powertrain-systems-provider/">Source</a>
     </div>
 
-    <div class="card s3card">
-      <span class="tag" style="background:#16a085;">New CEO</span>
-      <h3 style="font-size:20px;font-weight:800;margin-top:8px;">Yazaki North America</h3>
-      <p style="font-size:14px;"><b>What happened:</b> Jerry Moyers appointed President &amp; CEO (June 22, 2026), 30-year Yazaki veteran spanning finance, supply chain, ops and engineering. Yazaki NA + MOTER Technologies AI/DX partnership.</p>
-      <p style="font-size:14px;"><b>Business priority:</b> New-leader agenda — customer partnerships, people, profitable growth.</p>
-      <p style="font-size:14px;"><b>Celonis angle:</b> A fast NA operations baseline informs his first-100-days priorities; his supply-chain pedigree pre-sells the value.</p>
-      <div class="callout outreach"><i>Hook: "As you set NA priorities, would a rapid baseline of your core supply-chain flows be useful input?"</i></div>
-      <div class="src"><a href="https://www.yazaki-na.com/News/1991/jerry-moyers-appointed-president-ceo-of-yazaki-north-america-inc">Source: Yazaki NA</a></div>
+    <div class="card lt-teal">
+      <h3 style="font-size:20px;font-weight:800;color:#0d1b3d">Gentherm <span class="pill teal">Earnings / Merger</span></h3>
+      <p class="trigger-line"><span class="lab">What happened</span>Q2 2026 record revenue $416M (+11%); ~$0.55/share of merger &amp; restructuring cost from the pending Modine acquisition; new $400M buyback; $800M committed financing.</p>
+      <p class="trigger-line"><span class="lab">Business priority</span>Fund and execute the Modine integration while defending margin.</p>
+      <p class="trigger-line"><span class="lab">Celonis angle</span>CFO Douyard owns finance + IT — AP/touchless-invoicing wins service the financing; a baseline de-risks the merge.</p>
+      <div class="callout co-green"><i>Hook: With the Modine financing on the books, which working-capital lever are you pulling first to self-fund the integration?</i></div>
+      <a class="src" href="https://www.globenewswire.com/news-release/2026/07/23/3331951/0/en/Gentherm-Reports-2026-Second-Quarter-Results-and-Announces-a-New-Increased-Stock-Repurchase-Authorization.html">Source</a>
     </div>
 
-    <div class="card s3card">
-      <span class="tag" style="background:#16a085;">New CEO · Production</span>
-      <h3 style="font-size:20px;font-weight:800;margin-top:8px;">Aisin World Corp. of America</h3>
-      <p style="font-size:14px;"><b>What happened:</b> Hiromasa Okawa named CEO of AWA (April 2026), ex-Chief Production Reformation Officer; Scott Turpin retired to executive advisor.</p>
-      <p style="font-size:14px;"><b>Business priority:</b> Production reformation / manufacturing optimization in NA.</p>
-      <p style="font-size:14px;"><b>Celonis angle:</b> OEE, scrap/downtime and plant-variance use cases speak Okawa's native language.</p>
-      <div class="callout outreach"><i>Hook: "Given your production-reformation focus, where would visibility into plant-level process variance move the needle first?"</i></div>
-      <div class="src"><a href="https://www.aisinworld.com/2026/04/01/executive-changes-announced-at-aisin-world-corp-of-america/">Source: AWA executive changes</a></div>
+    <div class="card lt-teal">
+      <h3 style="font-size:20px;font-weight:800;color:#0d1b3d">Adient <span class="pill teal">Earnings / Restructuring</span></h3>
+      <p class="trigger-line"><span class="lab">What happened</span>Q2 FY2026 in line; raised FY outlook despite "temporary production inefficiencies on key programs"; active JIT-site restructuring talks with customers.</p>
+      <p class="trigger-line"><span class="lab">Business priority</span>Decide the future of specific JIT sites and remove program inefficiency.</p>
+      <p class="trigger-line"><span class="lab">Celonis angle</span>Plant/JIT process-variant analysis makes restructuring calls data-led.</p>
+      <div class="callout co-green"><i>Hook: Which programs are absorbing the inefficiency you flagged on the call — and do you have plant-level variance visibility to pinpoint it?</i></div>
+      <a class="src" href="https://www.fool.com/earnings/call-transcripts/2026/05/07/adient-adnt-q2-2026-earnings-call-transcript/">Source</a>
     </div>
 
-    <div class="card s3card">
-      <span class="tag" style="background:#16a085;">Investment · New Org</span>
-      <h3 style="font-size:20px;font-weight:800;margin-top:8px;">Denso International America</h3>
-      <p style="font-size:14px;"><b>What happened:</b> Denso plans ~$1B North American investment over four years, adding 2,000+ jobs (1,200+ in the U.S.) to localize operations. NA org update: Tom Arakawa CEO, Stephen Milam added NA Chief Strategy Officer.</p>
-      <p style="font-size:14px;"><b>Business priority:</b> Localization &amp; scaling NA operations.</p>
-      <p style="font-size:14px;"><b>Celonis angle:</b> Standing up new capacity is the moment to instrument processes from the start rather than retrofit.</p>
-      <div class="callout outreach"><i>Hook: "As you localize $1B of new NA capacity, how are you standardizing processes across the new sites from day one?"</i></div>
-      <div class="src"><a href="https://www.manufacturing.net/home/news/13208984/denso-plans-1b-north-american-investment">Source: Manufacturing.net</a></div>
+    <div class="card lt-teal">
+      <h3 style="font-size:20px;font-weight:800;color:#0d1b3d">Yazaki North America <span class="pill teal">New CEO</span></h3>
+      <p class="trigger-line"><span class="lab">What happened</span>Jerry Moyers named President &amp; CEO effective Jun 22, 2026 — 30+ years at Yazaki, focused on manufacturing optimization.</p>
+      <p class="trigger-line"><span class="lab">Business priority</span>Standardize and optimize NA manufacturing in a new-leader window.</p>
+      <p class="trigger-line"><span class="lab">Celonis angle</span>Variant/material-flow transparency for labor-heavy wire-harness assembly.</p>
+      <div class="callout co-green"><i>Hook: As you set your first-100-days manufacturing priorities, how are you measuring plant-to-plant process variance today?</i></div>
+      <a class="src" href="https://www.yazaki-na.com/News/1991/jerry-moyers-appointed-president-ceo-of-yazaki-north-america-inc">Source</a>
+    </div>
+
+    <div class="card lt-teal">
+      <h3 style="font-size:20px;font-weight:800;color:#0d1b3d">Aisin World Corp. of America <span class="pill teal">New CEO</span></h3>
+      <p class="trigger-line"><span class="lab">What happened</span>Hiromasa Okawa became CEO of AWA (Apr 2026); Pres/COO Scott Turpin retired to advisory.</p>
+      <p class="trigger-line"><span class="lab">Business priority</span>New NA leadership resetting operational priorities.</p>
+      <p class="trigger-line"><span class="lab">Celonis angle</span>Group-wide inventory + supply-chain visibility across a broad component portfolio.</p>
+      <div class="callout co-green"><i>Hook: Under the new NA structure, which operational metric are you most focused on lifting first?</i></div>
+      <a class="src" href="https://www.aisinworld.com/2026/04/01/executive-changes-announced-at-aisin-world-corp-of-america/">Source</a>
     </div>
 
   </div>
-  <div class="callout blue" style="margin-top:14px;"><b>No update this run:</b> Dauch Corporation, Inteva Products, Stellantis Financial Services — no fresh public trigger found.</div>
-  <div class="callout blue"><b>Evergreen outreach:</b> Every account above runs multi-ERP, multi-plant operations where process variance hides margin. When no fresh trigger exists, lead with the peer proof point most relevant to their segment (Renault for AP, MAHLE for supply chain).</div>
+  <p class="muted" style="margin:12px 0 0 4px">No fresh update this run: Inteva Products · Stellantis Financial Services. (Keep as evergreen-cadence accounts.)</p>
+  <div class="callout co-blue" style="margin-top:12px"><span class="lab">Evergreen outreach</span>Across the automotive-supplier base, the durable message is the same: margin pressure + M&amp;A + AI mandates all demand a process fact-base first. Lead with a Celonis peer proof from the same tier (MAHLE, Renault) and a single validated signal — never a feature list.</div>
 </section>
 
-<!-- SECTION 4 -->
+<!-- ===================== SECTION 4 ===================== -->
 <section id="competitors">
-  <div class="sec-title">
-    <div class="badge" style="background:#16a085;">4</div>
-    <h2>Competitor Intel</h2>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#16a085">4</div><h2>Competitor Intel</h2></div>
+  <div class="sub">Research-driven competitive set · July 2026</div>
   <div class="grid2">
 
     <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <h3 style="font-size:18px;">Microsoft — Power Automate Process Mining</h3>
-        <span class="pill" style="background:#eef1fb;color:#2d4cb8;">2026 Wave 1</span>
-      </div>
-      <p style="font-size:14px;margin-top:6px;"><b>Confirmed:</b> Object-centric process mining shipped GA in 2026 Wave 1, auto-enabled for all Process Mining customers, plus a customizable "Process Intelligence Studio."</p>
-      <p style="font-size:14px;"><b>Competitive risk:</b> "Good-enough + bundled with E5/Power Platform" pressure at IT buyers already standardized on Microsoft.</p>
-      <p style="font-size:14px;"><b>Celonis counter:</b> Discovery is table stakes — value is in the action/execution and pre-built value app library across SAP/Oracle/legacy, not just a Microsoft-centric estate.</p>
-      <div class="callout discovery"><i>Discovery: "Beyond seeing the process, what actually changes the outcome — and how much of your estate is non-Microsoft?"</i></div>
-      <div class="src"><a href="https://www.constellationr.com/insights/news/microsoft-officially-enters-process-mining-automation-ring-power-automate-process">Source: Constellation Research</a></div>
+      <h3 style="font-size:18px;color:#0d1b3d">SAP Signavio <span class="pill gray">Jul 2026</span></h3>
+      <p class="trigger-line"><span class="lab">Confirmed facts</span>July 2026 release adds a Value Case API and a "next-generation" Process Intelligence (Process Networks, Process Atoms, AI next-best-action) aimed at making process mining accessible to every user.</p>
+      <p class="trigger-line"><span class="lab">Competitive risk</span>SAP-native bundling — attractive to SAP-standardized shops that want one throat to choke.</p>
+      <p class="trigger-line"><span class="lab">Celonis counter</span>Auto suppliers run mixed estates (SAP + Plex + QAD + mainframe + finance systems). Signavio sees SAP best; Celonis is ERP-agnostic and captures the whole cross-system flow.</p>
+      <div class="callout co-yellow"><i>Discovery: How much of your end-to-end process actually lives inside SAP vs. spanning other ERPs and bolt-ons?</i></div>
+      <a class="src" href="https://community.sap.com/t5/technology-blog-posts-by-sap/sap-signavio-july-2026-product-release-process-transformation-management/ba-p/14446174">Source</a>
     </div>
 
     <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <h3 style="font-size:18px;">UiPath — Process + Task Mining + Agentic</h3>
-        <span class="pill" style="background:#eef1fb;color:#2d4cb8;">Jul 2026</span>
-      </div>
-      <p style="font-size:14px;margin-top:6px;"><b>Confirmed:</b> Positioning process + task mining as the discovery layer that feeds agentic automation, "closing the loop between discovery and execution."</p>
-      <p style="font-size:14px;"><b>Competitive risk:</b> Strong RPA install base; "one vendor for discovery-to-bots" narrative.</p>
-      <p style="font-size:14px;"><b>Celonis counter:</b> Automation-led vendors optimize toward more bots; Celonis is outcome-led — it decides <i>whether</i> and <i>where</i> to act using a system-agnostic context layer.</p>
-      <div class="callout discovery"><i>Discovery: "Is the goal more automations, or measurable business outcomes? How do you know a bot is solving the right problem?"</i></div>
-      <div class="src"><a href="https://www.uipath.com/platform/agentic-automation/process-intelligence">Source: UiPath</a></div>
+      <h3 style="font-size:18px;color:#0d1b3d">Microsoft (Fabric IQ / Work IQ) <span class="pill gray">Jun–Jul 2026</span></h3>
+      <p class="trigger-line"><span class="lab">Confirmed facts</span>At Build 2026 Microsoft framed "Microsoft IQ" (Work IQ, Fabric IQ) as a <b>context layer</b> for enterprise agents; a July Dataverse wave expands MCP connectivity and ships a Dataverse plugin to Claude, Cursor and Copilot.</p>
+      <p class="trigger-line"><span class="lab">Competitive risk</span>Direct encroachment on the "context layer" narrative Celonis owns.</p>
+      <p class="trigger-line"><span class="lab">Celonis counter</span>Microsoft's context is data/semantic meaning; Celonis's context is the <i>execution reality</i> mined from event logs — how work actually runs, not just what the data means.</p>
+      <div class="callout co-yellow"><i>Discovery: When your agents act, do they know the real end-to-end process — including the rework and exceptions — or just the data model?</i></div>
+      <a href="https://windowsnews.ai/article/microsoft-iq-at-build-2026-context-layer-powering-enterprise-agents-work-iq-fabric-iq.423529" class="src">Source</a>
     </div>
 
     <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <h3 style="font-size:18px;">SAP — Signavio &amp; Joule</h3>
-        <span class="pill" style="background:#eef1fb;color:#2d4cb8;">Sapphire 2026</span>
-      </div>
-      <p style="font-size:14px;margin-top:6px;"><b>Confirmed:</b> Post-Sapphire, SAP unified its stack into three layers — data context, build with Joule Studio 2.0, and agent governance — pushing "process intelligence as the governance layer."</p>
-      <p style="font-size:14px;"><b>Competitive risk:</b> Incumbency at SAP-standardized accounts; "native to your ERP" story.</p>
-      <p style="font-size:14px;"><b>Celonis counter:</b> Most auto Tier-1s run mixed estates (SAP + Oracle + Plex/QAD + mainframe). Signavio sees SAP best; Celonis is ERP-neutral end-to-end.</p>
-      <div class="callout discovery"><i>Discovery: "How many source systems touch your order-to-cash today — and does a SAP-native tool see all of them?"</i></div>
-      <div class="src"><a href="https://www.kai-waehner.de/blog/2026/07/22/process-intelligence-landscape-2026-mining-orchestration-and-the-agentic-ai-shift/">Source: Process Intelligence Landscape 2026</a></div>
+      <h3 style="font-size:18px;color:#0d1b3d">UiPath <span class="pill gray">May–Jul 2026</span></h3>
+      <p class="trigger-line"><span class="lab">Confirmed facts</span>Shipped agentic AI on Automation Suite (incl. on-prem for public sector, May 2026); pushing a full agentic-automation platform with process/task mining and FUSION 2026.</p>
+      <p class="trigger-line"><span class="lab">Competitive risk</span>Bundles mining with automation — "we'll find it and automate it" in one stack.</p>
+      <p class="trigger-line"><span class="lab">Celonis counter</span>Automating the wrong process scales waste. Celonis leads with the objective process fact-base that decides <i>what</i> to automate and quantifies the value first.</p>
+      <div class="callout co-yellow"><i>Discovery: Before automating a workflow, how do you prove it's the highest-value target and not just the easiest to bot?</i></div>
+      <a class="src" href="https://www.processexcellencenetwork.com/automation/news/uipath-unveils-first-enterprise-grade-agentic-automation-platform">Source</a>
     </div>
 
     <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <h3 style="font-size:18px;">Databricks — "Context Problem" framing</h3>
-        <span class="pill" style="background:#eef1fb;color:#2d4cb8;">Data+AI Summit 2026</span>
-      </div>
-      <p style="font-size:14px;margin-top:6px;"><b>Confirmed:</b> Ali Ghodsi: "AI doesn't have an intelligence problem; it has a context problem." Data-stack players are claiming the context narrative. (Note: also a Celonis <i>partner</i>.)</p>
-      <p style="font-size:14px;"><b>Competitive risk:</b> Data-platform owners argue context belongs in the lakehouse.</p>
-      <p style="font-size:14px;"><b>Celonis counter:</b> A data lake stores events; it doesn't model how work actually flows (who approves what, where exceptions occur). That behavioral/process context is Celonis. Lean into the partnership, not against it.</p>
-      <div class="callout discovery"><i>Discovery: "Your warehouse has the data — but does it know your actual process paths and exceptions, or just the tables?"</i></div>
-      <div class="src"><a href="https://www.processexcellencenetwork.com/process-mining/news/celonis-partners-with-databricks-to-operationalize-ai">Source: Celonis + Databricks</a></div>
+      <h3 style="font-size:18px;color:#0d1b3d">Industry context <span class="pill gray">Jul 2026</span></h3>
+      <p class="trigger-line"><span class="lab">Confirmed facts</span>Independent analysis (Kai Waehner, Jul 22 2026) frames process intelligence as "the layer that decides how reliably an enterprise runs, governs and automates" — and reports 88% of leaders plan to increase PI investment over the next 12–18 months.</p>
+      <p class="trigger-line"><span class="lab">Celonis angle</span>The category is validating Celonis's core thesis — use the 88% stat to create urgency.</p>
+      <div class="callout co-yellow"><i>Discovery: With 88% of peers increasing process-intelligence spend, where does that put you on the curve?</i></div>
+      <a class="src" href="https://www.kai-waehner.de/blog/2026/07/22/process-intelligence-landscape-2026-mining-orchestration-and-the-agentic-ai-shift/">Source</a>
     </div>
 
   </div>
-  <div class="callout blue" style="margin-top:14px;"><b>Evergreen watch:</b> Pega, Appian (BPM/low-code), Snowflake, Atlan (data stack), plus ServiceNow, IBM, ABBYY, Palantir — all circling the "context layer for AI" term. Track for entrants each run.</div>
-  <div class="callout blue"><b>No update this run:</b> ServiceNow, IBM, ABBYY, Palantir, Pega, Appian — no material process-intelligence announcement found in the window.</div>
+  <div class="callout co-blue" style="margin-top:12px"><span class="lab">Evergreen watch</span>Keep tracking the "context layer" land-grab (Microsoft, SAP) and agentic bundlers (UiPath). The durable Celonis wedge in automotive: multi-ERP, cross-system execution reality that no single-suite vendor can see.</div>
+  <p class="muted" style="margin:10px 0 0 4px">No update this run: IBM · ABBYY · Palantir · ServiceNow · Pega · Appian · Snowflake · Databricks · Atlan.</p>
 </section>
 
-<!-- SECTION 5 -->
+<!-- ===================== SECTION 5 ===================== -->
 <section id="news">
-  <div class="sec-title">
-    <div class="badge" style="background:#c46916;">5</div>
-    <h2>Celonis News &amp; ICP Relevance</h2>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#c46916">5</div><h2>Celonis News &amp; ICP Relevance</h2></div>
   <div class="grid2">
 
     <div class="card">
-      <span class="tag" style="background:#c46916;">Partnership</span>
-      <h3 style="font-size:16px;margin-top:8px;">Mythics + Celonis — AI-Driven Oracle Transformations</h3>
-      <p style="font-size:14px;margin-top:6px;">July 9, 2026: Oracle systems integrator Mythics partnered with Celonis to accelerate data-driven transformation across government, higher ed, healthcare and commercial enterprises.</p>
-      <div class="callout discovery"><b>ICP:</b> CIO / VP IT — for Oracle-heavy accounts, there's now a proven SI path. Useful proof for Aisin/Denso Oracle estates.</div>
-      <div class="src"><a href="https://www.prnewswire.com/news-releases/mythics-and-celonis-join-forces-to-accelerate-ai-driven-oracle-transformations-302821319.html">Source: PR Newswire</a></div>
+      <span class="pill orange">Analyst Recognition</span>
+      <h3 style="font-size:16px;color:#0d1b3d;margin:6px 0">Everest Group PEAK Matrix Leader — 7th year running</h3>
+      <p style="font-size:13.5px">Celonis named a Leader in the 2026 Everest Group Process Mining PEAK Matrix (Jul 15, 2026) for the seventh consecutive year, cited as the innovation leader in the market.</p>
+      <div class="callout co-yellow"><span class="lab">Who cares</span>CIO &amp; Procurement — de-risks the vendor choice. Use to neutralize "why not the incumbent suite?" objections.</div>
+      <a class="src" href="https://www.celonis.com/news/press/celonis-named-a-leader-for-seventh-consecutive-year-in-2026-everest-group-peak-matrix-for-process-mining">Source</a>
     </div>
 
     <div class="card">
-      <span class="tag" style="background:#c46916;">Customer Win</span>
-      <h3 style="font-size:16px;margin-top:8px;">Novo Nordisk cuts drug time-to-market by a year</h3>
-      <p style="font-size:14px;margin-top:6px;">July 23, 2026: Novo Nordisk, with Celonis, is speeding clinical development using AI agents to reduce drug time-to-market by a full year — a marquee agentic-AI outcome grounded in process context.</p>
-      <div class="callout discovery"><b>ICP:</b> CEO / COO — proof that "AI agents + process context" produces a hard cycle-time outcome. Reuse for Stellantis (24-month cycle) and new-leader velocity pitches.</div>
-      <div class="src"><a href="https://www.celonis.com/blog/finally-enterprise-ai-gets-the-context-it-needs-to-succeed-celonis-next-2026">Source: Celonis:NEXT 2026</a></div>
+      <span class="pill orange">Product / Vision</span>
+      <h3 style="font-size:16px;color:#0d1b3d;margin:6px 0">"No AI without PI" — the Context Layer at Celonis:NEXT 2026</h3>
+      <p style="font-size:13.5px">Celonis is positioning process intelligence as the context layer for enterprise AI — Context Model, an Agent Toolkit exposed via the Model Context Protocol (MCP), and an upgraded Orchestration Engine for real-time coordination across humans, automation and AI.</p>
+      <div class="callout co-yellow"><span class="lab">Who cares</span>CIO / Chief AI Officer — directly answers the 95%-of-AI-fails problem. Perfect for Stellantis's AI-at-scale mandate.</div>
+      <a class="src" href="https://www.celonis.com/blog/finally-enterprise-ai-gets-the-context-it-needs-to-succeed-celonis-next-2026">Source</a>
     </div>
 
     <div class="card">
-      <span class="tag" style="background:#c46916;">Partnership</span>
-      <h3 style="font-size:16px;margin-top:8px;">Celonis + Databricks — Operationalize AI</h3>
-      <p style="font-size:14px;margin-top:6px;">Celonis partnered with Databricks to bring process context to the lakehouse, letting enterprises operationalize AI on governed data plus behavioral process context.</p>
-      <div class="callout discovery"><b>ICP:</b> CIO / CDO — turns the "context problem" narrative into a joint story for data-stack-modern accounts rather than a competitive threat.</div>
-      <div class="src"><a href="https://www.processexcellencenetwork.com/process-mining/news/celonis-partners-with-databricks-to-operationalize-ai">Source: PEX Network</a></div>
+      <span class="pill orange">Partnership</span>
+      <h3 style="font-size:16px;color:#0d1b3d;margin:6px 0">Mythics + Celonis — Oracle transformation acceleration</h3>
+      <p style="font-size:13.5px">Announced Jul 9, 2026: Oracle systems integrator Mythics partners with Celonis to eliminate process inefficiency and accelerate Oracle Cloud transformations with real-time, data-driven insight.</p>
+      <div class="callout co-yellow"><span class="lab">Who cares</span>CIO — relevant for Oracle-ERP suppliers; shows Celonis fits beyond SAP environments.</div>
+      <a class="src" href="https://www.prnewswire.com/news-releases/mythics-and-celonis-join-forces-to-accelerate-ai-driven-oracle-transformations-302821319.html">Source</a>
     </div>
 
     <div class="card">
-      <span class="tag" style="background:#c46916;">Value Proof</span>
-      <h3 style="font-size:16px;margin-top:8px;">$11.3B in value realized by global enterprises</h3>
-      <p style="font-size:14px;margin-top:6px;">Celonis reports global enterprises have realized $11.3B in value using its process intelligence platform — the headline number for any ROI-anchored CFO conversation.</p>
-      <div class="callout discovery"><b>ICP:</b> CFO — the aggregate proof point for a hard-ROI, cost-transformation pitch to restructuring accounts (Adient, Stellantis).</div>
-      <div class="src"><a href="https://itwire.com/business-it-news/business-intelligence/global-enterprises-using-celonis-to-realise-11-3-billion-in-value">Source: iTWire</a></div>
+      <span class="pill orange">Value Proof</span>
+      <h3 style="font-size:16px;color:#0d1b3d;margin:6px 0">$11.3B in customer value + Ikigai acquisition</h3>
+      <p style="font-size:13.5px">Global enterprises have realized $11.3B in value using Celonis; the company also acquired MIT-linked decision-intelligence firm Ikigai to strengthen predictive/decisioning capability.</p>
+      <div class="callout co-yellow"><span class="lab">Who cares</span>CFO / COO — hard proof of realized value and a forward-looking decisioning roadmap.</div>
+      <a class="src" href="https://itwire.com/business-it-news/business-intelligence/global-enterprises-using-celonis-to-realise-11-3-billion-in-value.html">Source</a>
     </div>
 
   </div>
 </section>
 
-<!-- SECTION 6 -->
+<!-- ===================== SECTION 6 ===================== -->
 <section id="social">
-  <div class="sec-title">
-    <div class="badge" style="background:#2d4cb8;">6</div>
-    <h2>Social Media Hooks &amp; Video Scripts</h2>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#2d4cb8">6</div><h2>Social Media Hooks &amp; Video Scripts</h2></div>
   <div class="statbar">
-    <div class="statcard"><div class="num">89%</div><div class="lbl">of AI agent pilots never reach production</div><div class="src2">Gartner, 2026</div></div>
-    <div class="statcard"><div class="num">171%</div><div class="lbl">ROI from the 11% that do scale</div><div class="src2">Gartner, 2026</div></div>
-    <div class="statcard"><div class="num">$2T</div><div class="lbl">wasted on digital transformation by 2026</div><div class="src2">BM Magazine / industry est.</div></div>
-    <div class="statcard"><div class="num">88%</div><div class="lbl">of leaders raising process-intelligence spend (12–18 mo)</div><div class="src2">Process Intelligence Landscape 2026</div></div>
+    <div class="stat"><div class="num">95%</div><div class="cap">of gen-AI pilots show no measurable P&amp;L impact (MIT NANDA)</div></div>
+    <div class="stat"><div class="num">88%</div><div class="cap">of leaders will raise process-intelligence spend in 12–18 mo</div></div>
+    <div class="stat"><div class="num">383%</div><div class="cap">ROI &amp; 6-mo payback for Celonis customers (Forrester TEI)</div></div>
+    <div class="stat"><div class="num">20%</div><div class="cap">group-wide inventory cut at MAHLE with Celonis</div></div>
   </div>
   <div class="hookgrid">
 
-    <div class="hookcard navy">
-      <div class="htype">Fact-Based</div>
-      <div class="hline">89% of AI agent pilots <span class="accent">never make it to production.</span></div>
-      <div class="script">
-        <div><b>0–5s:</b> "Nine out of ten enterprise AI agents die before production."</div>
-        <div><b>5–20s:</b> Why? They act without knowing how work actually flows.</div>
-        <div><b>20–45s:</b> The 11% that scale return 171% ROI — the difference is context.</div>
-        <div><b>40–60s:</b> "Give your agents the process context first. That's what we do."</div>
-      </div>
-      <div class="fmt">Format: talking head + bold on-screen stat overlay at 0s.</div>
+    <div class="hook navy">
+      <span class="htag">Fact-Based</span>
+      <div class="hl">95% of enterprise AI pilots deliver <span class="accent">zero P&amp;L impact.</span></div>
+      <div class="scriptline"><b>0–5s</b> "Ninety-five percent of AI projects fail. Here's the part nobody says."</div>
+      <div class="scriptline"><b>5–20s</b> It's not the model. It's that the AI has no idea how your business actually runs.</div>
+      <div class="scriptline"><b>20–45s</b> Process intelligence gives AI the execution context — the real flow, rework and exceptions.</div>
+      <div class="scriptline"><b>40–60s</b> "No AI without PI. Want the 3-slide version?"</div>
+      <div class="tip">Format: talking head, bold "95%" text overlay on the hook.</div>
     </div>
 
-    <div class="hookcard blue">
-      <div class="htype">Gap-Based</div>
-      <div class="hline">Enterprises will waste <span class="accent">$2 trillion</span> on transformation this year.</div>
-      <div class="script">
-        <div><b>0–5s:</b> "$2 trillion. That's the digital-transformation waste bill for 2026."</div>
-        <div><b>5–20s:</b> ~70% of transformations miss their targets — usually a process, not tech, problem.</div>
-        <div><b>20–45s:</b> You can't fix a process you can't see end-to-end across systems.</div>
-        <div><b>40–60s:</b> "Start with the baseline. Measure the flow before you automate it."</div>
-      </div>
-      <div class="fmt">Format: text-overlay B-roll of factory / ERP screens.</div>
+    <div class="hook blue">
+      <span class="htag">Gap-Based</span>
+      <div class="hl">You're automating a process <span class="accent">you've never actually seen.</span></div>
+      <div class="scriptline"><b>0–5s</b> "Most teams automate the workflow on the slide, not the one that runs."</div>
+      <div class="scriptline"><b>5–20s</b> The real process has 40 variants, rework loops and hand-off delays.</div>
+      <div class="scriptline"><b>20–45s</b> Mine it first: MAHLE found the waste and cut inventory 20% group-wide.</div>
+      <div class="scriptline"><b>40–60s</b> "See your real process before you bot it. DM 'MAP'."</div>
+      <div class="tip">Format: screen-record a process graph reveal (B-roll of variant explosion).</div>
     </div>
 
-    <div class="hookcard navy2">
-      <div class="htype">Trend-Based</div>
-      <div class="hline">AI doesn't have an intelligence problem. <span class="accent">It has a context problem.</span></div>
-      <div class="script">
-        <div><b>0–5s:</b> "The smartest model still fails if it doesn't know your process."</div>
-        <div><b>5–20s:</b> 88% of leaders are raising process-intelligence spend for exactly this.</div>
-        <div><b>20–45s:</b> Behavioral context = who approves what, where exceptions hide, when humans decide.</div>
-        <div><b>40–60s:</b> "That context layer is what turns AI pilots into production."</div>
-      </div>
-      <div class="fmt">Format: talking head; quote card at 0s; end with customer-proof lower-third ($11.3B realized).</div>
+    <div class="hook navy">
+      <span class="htag">Trend-Based</span>
+      <div class="hl">88% of leaders are buying the <span class="accent">"context layer" in 2026.</span></div>
+      <div class="scriptline"><b>0–5s</b> "There's a new must-have in the AI stack — and it's not another model."</div>
+      <div class="scriptline"><b>5–20s</b> 88% of leaders plan to increase process-intelligence spend in the next 12–18 months.</div>
+      <div class="scriptline"><b>20–45s</b> Because agents without process context are confidently wrong.</div>
+      <div class="scriptline"><b>40–60s</b> "Where are you on the curve? Comment 'PI'."</div>
+      <div class="tip">Format: text-overlay trend card, animated stat counter to 88%.</div>
+    </div>
+
+    <div class="hook blue">
+      <span class="htag">Fact-Based</span>
+      <div class="hl">Payback in <span class="accent">6 months. 383% ROI.</span></div>
+      <div class="scriptline"><b>0–5s</b> "Rare in enterprise software: a number Forrester actually backed."</div>
+      <div class="scriptline"><b>5–20s</b> Celonis customers: 383% ROI, payback in six months, $11.3B value realized.</div>
+      <div class="scriptline"><b>20–45s</b> Renault: €15M in year one. The value is in the process you can't see.</div>
+      <div class="scriptline"><b>40–60s</b> "Want the ROI math on your process? Let's run it."</div>
+      <div class="tip">Format: talking head + lower-third stat cards animating in sequence.</div>
     </div>
 
   </div>
 </section>
 
-<!-- SECTION 7 -->
+<!-- ===================== SECTION 7 ===================== -->
 <section id="bdr">
-  <div class="sec-title">
-    <div class="badge" style="background:#c0392b;">7</div>
-    <h2>BDR Daily Tasks &amp; Campaigns &nbsp;·&nbsp; Grant + Sander</h2>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#c0392b">7</div><h2>BDR Daily Tasks &amp; Campaigns</h2></div>
+  <div class="sub">Two lanes per account · Grant = top-down exec · Sander = bottom-up committee · never both touch the same contact</div>
   <div class="grid2">
 
-    <!-- DANA -->
-    <div class="card s7card">
-      <h3 class="day" style="color:#c0392b;">Monday</h3>
-      <h3 class="acct" style="font-size:20px;">Dana Incorporated</h3>
-      <div class="cadence"><b>Cadence:</b> LIVE warm intro — <b>not cold cadence.</b> Advance-the-eval. GRANT: reply/keep the Kevin Williams thread moving toward a working session on baselining both estates. SANDER: map the integration-management-office &amp; shared-services layer <i>beneath</i> Williams/Metzger — never touch them.</div>
-      <div class="draftbox">
-        <b>GRANT lane — Subject:</b> "Baseline before the workstreams lock?"<br>
-        <b>Body (Transformation / CEO-office):</b> Kevin — congrats on stepping into the Eaton Mobility integration. With $250M of run-rate synergy riding on purchasing and manufacturing, the teams that measure a process baseline of both estates <i>before</i> workstreams lock are the ones that can actually prove capture later. thyssenkrupp ran 50+ use cases on one backbone doing exactly this. Worth comparing notes on how you're planning to baseline the combined operation?
+    <!-- MON DANA -->
+    <div class="card lb-red">
+      <div class="day" style="color:#c0392b">Monday</div>
+      <div class="acct">Dana Incorporated</div>
+      <span class="pill red">Transformation</span>
+      <div class="box"><span class="lab">Cadence step</span>LIVE THREAD — not cold cadence. Advance the Kevin Williams integration-office eval: confirm the 30-min technical validation and send the pre-close-baseline peer proof (Dauch/Dowlais, Gentherm/Modine).</div>
+      <div class="lane grant"><div class="who">Grant lane — exec + owned threads</div>Advance the Williams thread (schedule SE validation). Separately, a short congratulations note to new CEO Byron Foster tying his fresh mandate to the Eaton synergy clock. Both are Grant's contacts.</div>
+      <div class="draft">
+        <div class="subj">Subject: Baseline before the synergy clock starts</div>
+        Kevin — following our intro from Seth: the cleanest way to protect the $250M synergy target is a process baseline of both Dana and Eaton Mobility <i>before</i> integration workstreams lock, so you're harmonizing against real flows, not assumptions. Dauch just did exactly this post-Dowlais. I can bring a Celonis SE for a 30-minute technical validation on the multi-ERP extraction. Would a look at how we'd baseline both estates be useful before your next integration-office review?
       </div>
-      <div style="font-size:13px;margin-top:8px;"><b>Multi-thread (Sander):</b> Technical Evaluator — search "Dana" + "VP IT" / "Integration Management Office" / "Director Supply Chain."</div>
-      <span class="pill" style="background:#fdecea;color:#c0392b;">Portfolio: Transformation (12–24 mo)</span>
+      <div class="lane sander"><div class="who">Sander lane — committee mapping</div>Map the integration office and shared-services layer <i>beneath</i> Williams/Metzger (never touch them): find the Integration PMO lead, VP Finance Transformation, and a plant-IT/ERP owner.</div>
+      <div class="trigger-line" style="margin-top:8px"><span class="lab">Multi-thread target</span>Technical Evaluator — search "Dana integration" / "PMO" / "ERP program manager" on LinkedIn.</div>
     </div>
 
-    <!-- GENTHERM -->
-    <div class="card s7card">
-      <h3 class="day" style="color:#c0392b;">Tuesday <span style="font-weight:600;font-size:11px;color:#c0392b;">· ☎ CALL BLOCK 4–5 PM local</span></h3>
-      <h3 class="acct" style="font-size:20px;">Gentherm</h3>
-      <div class="cadence"><b>Cadence:</b> Day 1 cold email 1:00 PM local (Tue Jul 28). Tuesday 4–5 PM call block for last week's live threads. GRANT: CFO Douyard (owns finance + IT). SANDER opens bottom-up same account, Fri.</div>
-      <div class="draftbox">
-        <b>GRANT lane — Subject:</b> "Proving the Modine synergy number"<br>
-        <b>Body (Platform / CFO):</b> Jonathan — record Q2 and a tripled buyback just raised the bar on the Modine PT synergy story. As you fold in their thermal ops, a process baseline across the combined AP and supply chain is how CFOs turn a synergy target into a defensible, measurable number (Renault captured €15M in year one starting in AP). Since IT reports to you too, you'd own both halves of that. How are you planning to baseline the combined ops ahead of close?
+    <!-- TUE GENTHERM -->
+    <div class="card lb-red">
+      <div class="day" style="color:#c0392b">Tuesday</div>
+      <div class="acct">Gentherm</div>
+      <span class="pill red">Modernization</span>
+      <div class="box"><span class="lab">Cadence step</span>Day 1 cold email at 1:00 PM local to CFO. ⏰ Tuesday call block 4–5 PM local — hold for any prior-week Day-6 cold calls. LinkedIn connect referencing the Q2 print.</div>
+      <div class="lane grant"><div class="who">Grant lane — CFO persona</div>Day-1 email to Jon Douyard (CFO, also owns IT). CFO framing: days-to-close, 80%+ touchless invoicing, cash to self-fund the Modine integration.</div>
+      <div class="draft">
+        <div class="subj">Subject: Self-funding the Modine integration</div>
+        Jon — your Q2 print carried ~$0.55/share of merger &amp; restructuring cost while you're standing up $800M of financing for Modine. Peers like Renault pulled €15M out of AP/P2P in the first 12 months and pushed touchless-invoice rates past 80% — cash that services exactly this kind of integration. Since you own both finance and IT, you're the rare single owner who can move on it fast. What's the first working-capital lever you're planning to pull post-close?
       </div>
-      <div style="font-size:13px;margin-top:8px;"><b>Multi-thread (Sander):</b> Economic Buyer secured (CFO) → open Technical Evaluator: "Gentherm" + "Director Finance Transformation" / "VP IT" / "Director Supply Chain."</div>
-      <span class="pill" style="background:#fdecea;color:#c0392b;">Portfolio: Transformation (integration)</span>
+      <div class="lane sander"><div class="who">Sander lane — committee mapping</div>Open the Technical Evaluator/End-User layer: VP Finance Transformation, Director of Shared Services / AP, and an ERP/IT owner. Day 8 benchmark send on his own threads.</div>
+      <div class="trigger-line" style="margin-top:8px"><span class="lab">Multi-thread target</span>Economic Buyer support — search "Gentherm" "VP Finance" / "Shared Services" / "Controller".</div>
     </div>
 
-    <!-- ADIENT -->
-    <div class="card s7card">
-      <h3 class="day" style="color:#c0392b;">Wednesday · 📍 Today</h3>
-      <h3 class="acct" style="font-size:20px;">Adient</h3>
-      <div class="cadence"><b>Cadence:</b> Day 1 cold email 1:00 PM local (Wed Jul 29), timed ahead of the Aug 5 earnings call. GRANT: CFO/COO cost-transformation angle. SANDER: bottom-up plant/ops layer.</div>
-      <div class="draftbox">
-        <b>GRANT lane — Subject:</b> "Where's the production inefficiency hiding?"<br>
-        <b>Body (Modernization / CFO-COO):</b> You raised FY26 guidance but flagged customer-driven production inefficiency and launch cost. Ahead of Aug 5, the teams that can name <i>which</i> plants and launches drive that variance — down to the process path — get a cleaner restructuring story for the Street. Renault recovered €15M in year one isolating exactly this kind of leakage. Which part of the operation would you most want quantified first?
+    <!-- WED ADIENT -->
+    <div class="card lb-red">
+      <div class="day" style="color:#c0392b">Wednesday</div>
+      <div class="acct">Adient</div>
+      <span class="pill red">Modernization</span>
+      <div class="box"><span class="lab">Cadence step</span>Day 1 cold email at 1:00 PM local to CFO/COO layer, anchored to the "temporary production inefficiencies" line from the earnings call. LinkedIn connect same day.</div>
+      <div class="lane grant"><div class="who">Grant lane — CFO/COO persona</div>Day-1 email to CFO Mark Oswald (or CEO Dorlack): restructuring/JIT-site decisions should be data-led; Celonis quantifies plant/program variance.</div>
+      <div class="draft">
+        <div class="subj">Subject: Which programs are absorbing it?</div>
+        Mark — on the Q2 call you flagged temporary production inefficiencies on a handful of key programs, and you're in active talks on the future of specific JIT sites. Those are exactly the decisions that go better with plant-level process-variant data than with gut. Celonis makes program-by-program and site-by-site variance visible so restructuring lands on the real cost, not the loudest one. Out of curiosity — do you have variance visibility down to the individual program today?
       </div>
-      <div style="font-size:13px;margin-top:8px;"><b>Multi-thread (Sander):</b> End User / Technical Evaluator — "Adient" + "VP Manufacturing" / "Director Procurement" / "VP Finance."</div>
-      <span class="pill" style="background:#fdecea;color:#c0392b;">Portfolio: Modernization (3–6 mo ROI)</span>
+      <div class="lane sander"><div class="who">Sander lane — committee mapping</div>Map the operations/plant layer: VP Manufacturing, Director Continuous Improvement, and a JIT plant manager as future champions.</div>
+      <div class="trigger-line" style="margin-top:8px"><span class="lab">Multi-thread target</span>End User / Champion — search "Adient" "VP Manufacturing" / "Continuous Improvement" / "Operational Excellence".</div>
     </div>
 
-    <!-- YAZAKI -->
-    <div class="card s7card">
-      <h3 class="day" style="color:#c0392b;">Thursday · 🆕 New leader</h3>
-      <h3 class="acct" style="font-size:20px;">Yazaki North America</h3>
-      <div class="cadence"><b>Cadence:</b> Day 1 cold email 1:00 PM local (Thu Jul 30). Exec-change moment → GRANT owns (new CEO). SANDER maps the supply-chain / IT director layer.</div>
-      <div class="draftbox">
-        <b>GRANT lane — Subject:</b> "First-100-days baseline?"<br>
-        <b>Body (Transformation / CEO):</b> Jerry — congratulations on the President &amp; CEO role. Given your supply-chain and operations background, you know a NA priorities list is only as good as the baseline under it. A rapid, system-agnostic view of how your core supply-chain flows actually run gives you evidence for where to push first — no big program required to start. Would that kind of baseline be useful input as you set the agenda?
+    <!-- THU YAZAKI -->
+    <div class="card lb-red">
+      <div class="day" style="color:#c0392b">Thursday</div>
+      <div class="acct">Yazaki North America</div>
+      <span class="pill red">Transformation</span>
+      <div class="box"><span class="lab">Cadence step</span>Day 1 exec-trigger email at 1:00 PM local — new-CEO congratulations angle. Day 4 LinkedIn connect referencing the appointment.</div>
+      <div class="lane grant"><div class="who">Grant lane — CEO persona</div>Day-1 email to Jerry Moyers (new President &amp; CEO): congratulate + bridge to his manufacturing-optimization mandate. Exec-transition moments are Grant's lane.</div>
+      <div class="draft">
+        <div class="subj">Subject: First 100 days &amp; plant variance</div>
+        Jerry — congratulations on the President &amp; CEO role. Given your track record on manufacturing optimization, the first-100-days question I'd flag: wire-harness assembly hides most of its cost in plant-to-plant process variance and material flow that spreadsheets can't see. Celonis makes that variance measurable so standardization targets the real gaps. As you set NA priorities, how are you measuring plant-to-plant variance today?
       </div>
-      <div style="font-size:13px;margin-top:8px;"><b>Multi-thread (Sander):</b> Champion / Technical Evaluator — "Yazaki North America" + "VP Supply Chain" / "Director IT" / "VP Manufacturing."</div>
-      <span class="pill" style="background:#fdecea;color:#c0392b;">Portfolio: Transformation (program velocity)</span>
+      <div class="lane sander"><div class="who">Sander lane — committee mapping</div>No named CIO — Sander's first job is to find the IT/digital owner and the NA operations layer (VP Manufacturing, VP Supply Chain) to build the committee.</div>
+      <div class="trigger-line" style="margin-top:8px"><span class="lab">Multi-thread target</span>Technical Evaluator — search "Yazaki North America" "CIO" / "VP IT" / "Digital Manufacturing".</div>
     </div>
 
-    <!-- AISIN -->
-    <div class="card s7card">
-      <h3 class="day" style="color:#c0392b;">Friday · 🆕 New CEO</h3>
-      <h3 class="acct" style="font-size:20px;">Aisin World Corp. of America</h3>
-      <div class="cadence"><b>Cadence:</b> Day 1 cold email 1:00 PM local (Fri Jul 31). GRANT owns exec-change (new CEO). SANDER opens the production-engineering / IT layer bottom-up same day.</div>
-      <div class="draftbox">
-        <b>GRANT lane — Subject:</b> "Production reformation, made visible"<br>
-        <b>Body (Operational / COO-VP Mfg):</b> Mr. Okawa — congratulations on the AWA CEO role. Your production-reformation background is exactly where process visibility pays: a 5-point OEE gap is a 5–7% cost disadvantage, and most plant variance hides in the process path, not the machine. A baseline of your NA plants shows where reformation moves the number first. Which plant would you want to see quantified to start?
+    <!-- FRI AISIN -->
+    <div class="card lb-red">
+      <div class="day" style="color:#c0392b">Friday</div>
+      <div class="acct">Aisin World Corp. of America</div>
+      <span class="pill red">Transformation</span>
+      <div class="box"><span class="lab">Cadence step</span>Day 1 exec-trigger email at 1:00 PM local — new-CEO angle. Day 4 LinkedIn connect. Route through NA operations/IT leaders beneath Okawa.</div>
+      <div class="lane grant"><div class="who">Grant lane — CEO persona</div>Day-1 email to Hiromasa Okawa (new AWA CEO): new-leadership operational-priorities angle. Exec-transition = Grant's lane.</div>
+      <div class="draft">
+        <div class="subj">Subject: New structure, first metric</div>
+        Mr. Okawa — congratulations on stepping into the AWA CEO role. New leadership is the moment to set the operational baseline. Across a component portfolio as broad as Aisin's, inventory and supply-chain visibility is where the fastest wins sit — MAHLE cut group-wide inventory 20% by making material flow visible. As you set North American priorities under the new structure, which operational metric are you most focused on lifting first?
       </div>
-      <div style="font-size:13px;margin-top:8px;"><b>Multi-thread (Sander):</b> End User / Technical Evaluator — "Aisin" + "VP Manufacturing" / "Director Production Engineering" / "Director IT."</div>
-      <span class="pill" style="background:#fdecea;color:#c0392b;">Portfolio: Modernization / Operational</span>
+      <div class="lane sander"><div class="who">Sander lane — committee mapping</div>Map NA operations/supply-chain and IT leaders beneath Okawa; identify a plant-level champion for an inventory use case.</div>
+      <div class="trigger-line" style="margin-top:8px"><span class="lab">Multi-thread target</span>Economic Buyer / Champion — search "Aisin" "VP Supply Chain" / "VP Operations" / "IT Director" North America.</div>
     </div>
 
   </div>
 
   <!-- CAMPAIGN CORNER -->
-  <div class="card campaign" style="margin-top:16px;">
-    <h3 style="font-size:18px;color:#0d1b3d;">📣 Campaign Corner — Week 31</h3>
-    <p style="font-size:14px;margin-top:8px;"><b>This week's campaign — "Integration &amp; Reset: baseline before you build."</b> Group 1 is dominated by transition signals: two active integrations (Dana/Eaton, Gentherm/Modine) and two brand-new CEOs (Yazaki, Aisin). The unifying pitch: whatever you're merging or resetting, a system-agnostic process baseline is the cheapest way to prove synergy or set new-leader priorities. <b>Enroll:</b> Dana, Gentherm (integration track); Yazaki, Aisin (new-leader track); Adient (restructuring track).</p>
-    <div style="margin-top:12px;">
-      <b style="font-size:13px;">Cadence cheat sheet:</b>
-      <div class="cadence" style="margin-top:6px;">Day 1 email → Day 3 thread reply (peer proof) → Day 4 LinkedIn connect → Day 6 call (Tue 4–5 PM) → Day 8 benchmark email → Day 10 LinkedIn → Day 12 call → Day 14 breakup → Day 15+ multi-thread</div>
+  <div class="card" style="margin-top:16px;border-top:5px solid #c0392b">
+    <h3 style="font-size:18px;color:#0d1b3d">Campaign Corner</h3>
+    <div class="callout co-red"><span class="lab">This week's campaign — "Baseline Before You Merge"</span>Three active mergers in territory (Dana+Eaton, Gentherm+Modine, Dauch+Dowlais) all share one gap: integration-synergy targets set without a process fact-base. Enroll Dana, Gentherm and Dauch in a synchronized "pre-close / post-close process baseline" play, using each other as peer proof. Secondary enrollment: Yazaki &amp; Aisin on the new-CEO "set your operational baseline" variant.</div>
+    <span class="lab">Cadence cheat sheet — 14-day rhythm</span>
+    <div class="cheat">
+      <span>Day 1 · Email</span><span class="arw">→</span><span>Day 3 · Thread reply</span><span class="arw">→</span><span>Day 4 · LinkedIn</span><span class="arw">→</span><span>Day 6 · Call (Tue 4–5PM)</span><span class="arw">→</span><span>Day 8 · Benchmark email</span><span class="arw">→</span><span>Day 10 · LinkedIn</span><span class="arw">→</span><span>Day 12 · Call</span><span class="arw">→</span><span>Day 14 · Breakup</span>
     </div>
-    <div style="margin-top:12px;">
-      <span class="metricchip">Reply target: 15–25% (vs 1–5% generic)</span>
-      <span class="metricchip">Best call window: Tue 4–5 PM local</span>
-      <span class="metricchip">5+ threads/account → 45% vs 22% close</span>
+    <div class="metricchips">
+      <div class="mchip">Reply target <b>15–25%</b> (vs 1–5% generic)</div>
+      <div class="mchip">Best call window <b>Tue 4–5 PM local</b></div>
+      <div class="mchip"><b>5+ threads</b>/account — 45% vs 22% close</div>
     </div>
-    <p style="font-size:14px;margin-top:12px;"><b>Give-to-get asset:</b> A pre-filled <b>M&amp;A Synergy Baseline ROI one-pager for Dana</b> — model the $250M run-rate synergy target against a process-baseline timeline (purchasing + manufacturing), using public deal figures. Reusable for the Gentherm/Modine thread with the swap of public numbers.</p>
+    <div class="callout co-green" style="margin-top:12px"><span class="lab">Give-to-get asset</span>Build a one-page <b>"M&amp;A Integration Process Baseline" ROI teaser pre-filled with Dana's public numbers</b> — the $5.1B combine and $250M synergy target — showing how a baseline protects the synergy clock. Reusable for Gentherm/Modine and Dauch/Dowlais by swapping the figures.</div>
   </div>
 </section>
 
-<div class="footer">Brief auto-generated · July 29, 2026 · grant-faulkner.github.io/My-Sales-Brief</div>
+</div>
+<footer class="fixed">Brief auto-generated · July 30, 2026 · grant-faulkner.github.io/My-Sales-Brief</footer>
 
 <script>
-  // Sticky nav active-state on scroll
-  const links = document.querySelectorAll('#nav a');
-  const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href')));
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const id = e.target.id;
-        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
-      }
-    });
-  }, { rootMargin: '-40% 0px -55% 0px' });
-  sections.forEach(s => { if (s) obs.observe(s); });
+const links=[...document.querySelectorAll('nav.sticky a')];
+const secs=links.map(l=>document.querySelector(l.getAttribute('href')));
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id='#'+e.target.id;
+      links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')===id));
+    }
+  });
+},{rootMargin:'-20% 0px -70% 0px',threshold:0});
+secs.forEach(s=>s&&obs.observe(s));
 </script>
 </body>
 </html>
