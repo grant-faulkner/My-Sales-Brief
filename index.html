@@ -3,86 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Celonis Process Intelligence Sales Brief — August 5, 2026</title>
+<title>Celonis Process Intelligence Sales Brief — Aug 6, 2026</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#f7f8fa; color:#1a1f36; line-height:1.55; padding:20px 16px 90px; }
-  .wrap { max-width:1080px; margin:0 auto; }
-  header.hero { background:linear-gradient(135deg,#0d1b3d 0%,#2d4cb8 100%); color:#fff; border-radius:16px; padding:34px 32px; box-shadow:0 12px 40px rgba(13,27,61,0.28); }
-  header.hero h1 { font-size:27px; font-weight:800; letter-spacing:-0.3px; }
-  header.hero p { margin-top:8px; font-size:15px; opacity:.9; }
-  header.hero .meta { margin-top:14px; display:inline-block; background:rgba(255,255,255,0.14); padding:6px 14px; border-radius:20px; font-size:13px; font-weight:600; }
-  /* sticky nav */
-  nav.pills { position:sticky; top:0; z-index:50; background:rgba(247,248,250,0.94); backdrop-filter:blur(6px); padding:12px 0; margin:14px 0 6px; display:flex; flex-wrap:wrap; gap:8px; }
-  nav.pills a { text-decoration:none; font-size:12px; font-weight:700; color:#2d4cb8; background:#fff; border:1px solid #dbe0ea; padding:7px 13px; border-radius:20px; transition:all .15s; white-space:nowrap; }
-  nav.pills a:hover { background:#eef1f8; }
-  nav.pills a.active { background:#0d1b3d; color:#fff; border-color:#0d1b3d; }
-  section { margin-top:30px; scroll-margin-top:64px; }
-  .sec-title { display:flex; align-items:center; gap:13px; margin-bottom:16px; }
-  .badge { width:34px; height:34px; border-radius:50%; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:16px; flex-shrink:0; }
-  .sec-title h2 { color:#0d1b3d; font-size:21px; font-weight:800; }
-  .sec-title .sub { color:#6b7280; font-size:13px; font-weight:600; }
-  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  .card { background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:18px 20px; }
-  .card.lb { border-left:5px solid #7b2d8b; }
-  .card.lt { border-left:5px solid #16a085; }
-  .card.tt { border-top:5px solid #16a085; }
-  .card.lr { border-left:5px solid #c0392b; }
-  .dayhead .day { font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:1px; }
-  .dayhead .acct { font-size:22px; font-weight:800; color:#0d1b3d; margin-top:2px; }
-  .box { background:#f3f4f7; border-radius:8px; padding:12px 14px; margin-top:12px; font-size:13.5px; }
-  .box h4 { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:#6b7280; margin-bottom:6px; }
-  a { color:#2d4cb8; }
-  .tag { display:inline-block; font-size:10px; text-transform:uppercase; letter-spacing:1px; font-weight:700; padding:3px 9px; border-radius:12px; }
-  .pill-purple { background:#f0e2f5; color:#7b2d8b; }
-  .pill-teal { background:#d7f0ea; color:#0e7a63; }
-  .pill-red { background:#f8dcd8; color:#a5281b; }
-  .pill-blue { background:#dde6fb; color:#2d4cb8; }
-  .pill-orange { background:#fbe6d3; color:#a85a12; }
-  .callout { border-radius:8px; padding:11px 14px; margin-top:12px; font-size:13.5px; }
-  .co-yellow { background:#fdf6d8; border-left:4px solid #e0b70a; }
-  .co-green { background:#e2f5e8; border-left:4px solid #1e9e54; }
-  .co-purple { background:#f6ecfa; border-left:4px solid #7b2d8b; }
-  .co-teal { background:#e0f4ef; border-left:4px solid #16a085; }
-  .co-blue { background:#e4ecfd; border-left:4px solid #2d4cb8; }
-  .co-red { background:#fbe6e2; border-left:4px solid #c0392b; }
-  .muted { color:#8a8f9c; font-style:italic; font-size:13px; }
-  .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
-  .chip { background:#d7f0ea; color:#0e7a63; font-size:11px; font-weight:700; padding:4px 10px; border-radius:12px; }
-  .src { font-size:12px; margin-top:10px; }
-  /* stat bar */
-  .statbar { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:18px; }
-  .stat { background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:16px; text-align:center; }
-  .stat .num { font-size:28px; font-weight:800; color:#0d1b3d; }
-  .stat .lbl { font-size:11px; color:#6b7280; margin-top:4px; }
-  /* dark hook cards */
-  .hookgrid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  .hook { border-radius:12px; padding:20px; color:#fff; }
-  .hook.navy { background:linear-gradient(135deg,#0d1b3d,#233a7a); }
-  .hook.li { background:linear-gradient(135deg,#0a66c2,#1a4a80); }
-  .hook .hl { font-size:19px; font-weight:800; margin:8px 0 12px; line-height:1.3; }
-  .hook .yellow { color:#ffd84d; }
-  .hook .line { font-size:13px; margin:5px 0; opacity:.94; }
-  .hook .tip { margin-top:12px; font-size:12px; opacity:.8; border-top:1px solid rgba(255,255,255,0.2); padding-top:9px; }
-  .metricbar { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
-  .mchip { background:#0d1b3d; color:#fff; font-size:12px; font-weight:700; padding:8px 13px; border-radius:20px; }
-  .lane { border-radius:8px; padding:10px 13px; margin-top:10px; font-size:13px; }
-  .lane-grant { background:#eef1f8; border-left:4px solid #2d4cb8; }
-  .lane-sander { background:#f3eef7; border-left:4px solid #7b2d8b; }
-  footer.fix { position:fixed; bottom:0; left:0; right:0; background:#0d1b3d; color:#fff; font-size:12px; text-align:center; padding:9px; z-index:60; }
-  @media (max-width:720px){ .grid2,.hookgrid{grid-template-columns:1fr;} .statbar{grid-template-columns:1fr 1fr;} header.hero h1{font-size:22px;} }
+:root{
+  --navy:#0d1b3d; --blue:#2d4cb8; --purple:#7b2d8b; --teal:#16a085;
+  --orange:#c46916; --red:#c0392b; --li:#0a66c2; --bg:#f7f8fa; --ink:#1a1f36;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);line-height:1.55;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+.wrap{max-width:1120px;margin:0 auto;padding:20px 20px 90px;}
+a{color:var(--blue);}
+header.hero{background:linear-gradient(135deg,#0d1b3d 0%,#2d4cb8 100%);color:#fff;
+  border-radius:16px;padding:30px 34px;box-shadow:0 14px 40px rgba(13,27,61,.35);}
+header.hero h1{margin:0 0 6px;font-size:26px;font-weight:800;letter-spacing:.3px;}
+header.hero p{margin:2px 0;opacity:.92;font-size:14px;}
+.hero .wk{display:inline-block;margin-top:10px;background:rgba(255,255,255,.16);
+  padding:5px 14px;border-radius:20px;font-size:13px;font-weight:700;}
+nav.sticky{position:sticky;top:0;z-index:50;background:rgba(247,248,250,.94);
+  backdrop-filter:blur(8px);padding:12px 4px;margin:14px 0 6px;
+  display:flex;flex-wrap:wrap;gap:8px;}
+nav.sticky a{background:#fff;border:1px solid #e2e6ef;color:var(--navy);
+  text-decoration:none;font-size:12.5px;font-weight:600;padding:7px 13px;
+  border-radius:20px;transition:.15s;white-space:nowrap;}
+nav.sticky a:hover{border-color:var(--blue);}
+nav.sticky a.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+section{margin:34px 0;}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:6px;}
+.badge{width:34px;height:34px;border-radius:50%;color:#fff;font-weight:800;
+  display:flex;align-items:center;justify-content:center;font-size:16px;flex:0 0 auto;}
+.sec-head h2{margin:0;color:var(--navy);font-size:21px;font-weight:800;}
+.sec-sub{color:#5a6377;font-size:13.5px;margin:0 0 16px 48px;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+.card{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);
+  padding:18px 20px;}
+.card.lb{border-left:5px solid var(--purple);}
+.card.lred{border-left:5px solid var(--red);}
+.card.tt{border-top:5px solid var(--teal);}
+.day{font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px;}
+.acct{font-size:22px;font-weight:800;color:var(--navy);margin:2px 0 10px;}
+.acct.sm{font-size:20px;}
+.tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:1px;
+  font-weight:700;padding:3px 9px;border-radius:20px;color:#fff;margin:2px 4px 2px 0;}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;
+  border-radius:20px;margin:2px 4px 2px 0;}
+.contacts{background:#f4f5f8;border-radius:8px;padding:12px 14px;margin:10px 0;font-size:13.5px;}
+.contacts .nm{font-weight:700;color:var(--navy);}
+.muted{color:#7a8399;font-style:italic;font-size:13px;}
+.callout{border-left:4px solid;padding:10px 14px;border-radius:6px;margin:10px 0;font-size:13.5px;}
+.co-purple{border-color:var(--purple);background:#f6eefa;}
+.co-teal{border-color:var(--teal);background:#eafaf5;}
+.co-yellow{border-color:#e6b800;background:#fdf8e3;}
+.co-green{border-color:#1e9e5a;background:#e9f9ef;}
+.co-blue{border-color:var(--blue);background:#eef1fb;}
+.lbl{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:#8892a6;font-weight:700;}
+.src{font-size:12px;margin-top:8px;display:block;}
+h3.cardt{margin:0 0 4px;font-size:17px;color:var(--navy);}
+.statbar{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:6px 0 20px;}
+.stat{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);
+  padding:16px;text-align:center;}
+.stat .n{font-size:30px;font-weight:800;color:var(--navy);line-height:1.1;}
+.stat .l{font-size:12px;color:#5a6377;margin-top:4px;}
+.stat .c{font-size:10.5px;color:#9aa3b5;margin-top:5px;}
+.hookcard{background:var(--navy);color:#fff;border-radius:12px;padding:18px 20px;}
+.hookcard.blue{background:#0a2a5e;}
+.hookcard .hl{font-size:19px;font-weight:800;margin:8px 0;line-height:1.3;}
+.hookcard .acc{color:#ffd84d;}
+.hookcard .script{font-size:12.5px;opacity:.92;}
+.hookcard .script b{color:#ffd84d;}
+.hookcard .fmt{font-size:11.5px;margin-top:10px;opacity:.8;border-top:1px solid rgba(255,255,255,.2);padding-top:8px;}
+.chip{display:inline-block;background:#eafaf5;color:#0e6b57;font-size:11.5px;font-weight:600;
+  padding:3px 10px;border-radius:20px;margin:2px 4px 2px 0;}
+.draft{background:#fdeeee;border-left:4px solid var(--red);border-radius:6px;padding:11px 14px;margin:10px 0;font-size:13px;}
+.draft .subj{font-weight:700;color:var(--navy);}
+.mt{font-size:12.5px;color:#444;margin-top:8px;}
+footer.fx{position:fixed;bottom:0;left:0;right:0;background:var(--navy);color:#fff;
+  text-align:center;font-size:12.5px;padding:9px;z-index:60;}
+.metrics{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0;}
+.mchip{background:#fff;border:1px solid #e2e6ef;border-radius:20px;padding:6px 13px;font-size:12px;font-weight:600;color:var(--navy);}
+.cheat{background:#f4f5f8;border-radius:8px;padding:10px 14px;font-size:12.5px;margin:10px 0;font-weight:600;color:#33405c;}
+@media(max-width:720px){
+  .grid2,.grid3,.statbar{grid-template-columns:1fr;}
+  .wrap{padding:14px 12px 90px;}
+  header.hero h1{font-size:21px;}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
-
 <header class="hero">
   <h1>Celonis Process Intelligence — Sales Brief</h1>
-  <p>Automotive &amp; Mobility territory · Grant Faulkner &amp; Sander (BDR)</p>
-  <span class="meta">Week 32 · Group 2 (Mid Priority) · Aug 3–7, 2026</span>
+  <p>Prepared for Grant Faulkner · Account Executive</p>
+  <p>Thursday, August 6, 2026</p>
+  <span class="wk">Week 32 · Group 2 (Mid Priority) · Aug 3–7</span>
 </header>
 
-<nav class="pills" id="nav">
+<nav class="sticky" id="nav">
   <a href="#tasks">① Tasks</a>
   <a href="#usecases">② Use Cases</a>
   <a href="#triggers">③ Account Triggers</a>
@@ -94,92 +111,115 @@
 
 <!-- ============ SECTION 1 ============ -->
 <section id="tasks">
-  <div class="sec-title">
-    <div class="badge" style="background:#7b2d8b;">1</div>
-    <div><h2>This Week's Tasks</h2><div class="sub">Week 32 · Aug 3–7 · Mid-Priority rotation</div></div>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#7b2d8b">1</div><h2>This Week's Tasks</h2></div>
+  <p class="sec-sub">Week 32 · Aug 3–7 · Group 2 (Mid Priority): one account per weekday.</p>
   <div class="grid2">
 
-    <!-- Monday: Cooper Standard -->
+    <!-- MON Cooper Standard -->
     <div class="card lb">
-      <div class="dayhead"><div class="day" style="color:#7b2d8b;">Monday</div><div class="acct">Cooper Standard</div></div>
-      <div class="box"><h4>Contacts</h4>
-        <b>Soma Venkat</b> — SVP, Chief Information Technology &amp; AI Officer<br>
-        <a href="https://www.constellationr.com/communities/business-transformation-150/2026-2027" target="_blank">Named to Constellation Business Transformation 150™ 2026–27</a><br>
-        <span class="tag pill-purple">📌 Connect on LinkedIn</span>
+      <div class="day" style="color:#7b2d8b">Monday</div>
+      <div class="acct">Cooper Standard</div>
+      <div class="contacts">
+        <div class="nm">Soma Venkat — SVP, Chief Information Technology &amp; AI Officer</div>
+        LinkedIn: <a href="https://www.linkedin.com/in/soma-venkat" target="_blank">search "Soma Venkat Cooper Standard"</a>
+        <span class="pill" style="background:#f6eefa;color:#7b2d8b">📌 Connect on LinkedIn</span>
       </div>
-      <div class="box"><h4>Triggers</h4>
-        Q2 2026 results reported <b>Jul 30, 2026</b> — restructuring/special items ongoing; company completed a debt refinancing ($24.2M Q1 loss on refi) and says it is on track to meet or exceed 2026 sales &amp; profitability targets.
-        <div class="src"><a href="https://www.marketbeat.com/earnings/reports/2026-7-30-cooper-standard-holdings-inc-stock/" target="_blank">Source: MarketBeat Q2 2026 earnings</a></div>
+      <div class="lbl">Triggers</div>
+      <p style="font-size:13.5px;margin:4px 0">Q2 2026 (Jul 30): net loss of $18.8M <b>including $17.1M in restructuring charges</b> — yet positive cash flow, revenue of $721.4M beat, strong new-business awards, midpoint FY guidance held ($2.7–2.9B). <a class="src" href="https://www.prnewswire.com/news-releases/cooper-standard-highlights-positive-cash-flow-and-continued-strong-new-business-awards-in-the-second-quarter-of-2026-maintains-midpoint-of-full-year-guidance-302844197.html" target="_blank">Source: PRNewswire Q2 2026</a></p>
+      <div class="callout co-purple">
+        <div class="lbl">Suggested Action</div>
+        Restructuring + margin pressure is the opening. Email Venkat: reference the $17.1M restructuring charge and position process intelligence as the way to make those cost actions <i>stick</i> — surfacing where the savings actually land across a multi-plant footprint before they leak back.
       </div>
-      <div class="callout co-purple"><b>Suggested action:</b> Congratulate Venkat on the Constellation BT150 recognition, then bridge to how process intelligence gives a CIO/AI office a system-agnostic baseline to hit refinancing-driven cost targets — quantify working-capital leakage across P2P.</div>
-      <div class="callout co-teal"><b>Use Case Spotlight — Accounts Payable / P2P:</b> A restructuring supplier under a fresh debt covenant needs touchless invoicing and DPO discipline; Celonis surfaces maverick spend and payment-term leakage fast.</div>
+      <div class="callout co-teal">
+        <div class="lbl">Use Case Spotlight</div>
+        <b>Inventory &amp; Supply-Chain Transparency</b> — a restructuring supplier needs real-time visibility into where working capital is trapped across plants; MAHLE cut group-wide inventory 20% with the same play.
+      </div>
     </div>
 
-    <!-- Tuesday: Gentex -->
+    <!-- TUE Gentex -->
     <div class="card lb">
-      <div class="dayhead"><div class="day" style="color:#7b2d8b;">Tuesday</div><div class="acct">Gentex</div></div>
-      <div class="box"><h4>Contacts</h4>
-        <b>Neil Boehm</b> — Chief Operations Officer &amp; CTO (promoted to COO Jan 2025, retains CTO)<br>
-        <a href="https://ir.gentex.com/corporate-governance/management-team" target="_blank">Gentex Management Team</a><br>
-        <span class="tag pill-purple">📌 Connect on LinkedIn</span>
+      <div class="day" style="color:#7b2d8b">Tuesday</div>
+      <div class="acct">Gentex Corporation</div>
+      <div class="contacts">
+        <div class="nm">Neil Boehm — Chief Operating Officer &amp; CTO</div>
+        LinkedIn: <a href="https://www.linkedin.com/in/search/results/people/?keywords=Neil%20Boehm%20Gentex" target="_blank">search "Neil Boehm Gentex"</a>
+        <span class="pill" style="background:#f6eefa;color:#7b2d8b">📌 Connect on LinkedIn</span>
       </div>
-      <div class="box"><h4>Triggers</h4>
-        Q2 2026 (Jul 24): net sales <b>$651.3M</b>, gross margin 37.0% (+280 bps YoY), adj EPS $0.58 <b>beat</b> — but revenue <b>missed</b> $682.9M est on a 3% auto-sales decline (Europe/China weakness). FY guidance held at $2.65–2.75B.
-        <div class="src"><a href="https://ir.gentex.com/node/17836/pdf" target="_blank">Source: Gentex Q2 2026 results</a></div>
+      <div class="lbl">Triggers</div>
+      <p style="font-size:13.5px;margin:4px 0">Q2 2026 (Jul 24): net income +19% to $114.7M, EPS $0.54 (+26% YoY), gross margin up to 37%. VOXX/PAC acquisition now a "meaningful contributor" only 15 months post-close — active integration. <a class="src" href="https://www.globenewswire.com/news-release/2026/07/24/3332811/32299/en/gentex-reports-second-quarter-2026-financial-results.html" target="_blank">Source: GlobeNewswire Q2 2026</a></p>
+      <div class="callout co-purple">
+        <div class="lbl">Suggested Action</div>
+        Boehm wears the COO <i>and</i> CTO hats — a rare single-thread to the operator. Anchor on VOXX integration: post-acquisition, the fastest way to hit synergy targets is a process baseline of both estates. Ask how he's measuring order-to-cash across the combined entity today.
       </div>
-      <div class="callout co-purple"><b>Suggested action:</b> Boehm now owns operations AND technology — a rare single-throat COO/CTO. Anchor on the revenue miss vs. beat on margin: process intelligence protects OEE and scrap/downtime while regional demand is soft, defending the margin story he just delivered.</div>
-      <div class="callout co-teal"><b>Use Case Spotlight — Inventory Management:</b> With a 3% production decline, inventory/demand mismatch is the risk; MAHLE-style real-time inventory control keeps working capital tight across plants.</div>
+      <div class="callout co-teal">
+        <div class="lbl">Use Case Spotlight</div>
+        <b>Order-to-Cash / DSO</b> — integrating VOXX means reconciling two O2C flows; Celonis surfaces variant divergence so cash conversion doesn't degrade during the merge.
+      </div>
     </div>
 
-    <!-- Wednesday: Lucid -->
+    <!-- WED Lucid -->
     <div class="card lb">
-      <div class="dayhead"><div class="day" style="color:#7b2d8b;">Wednesday</div><div class="acct">Lucid Motors</div></div>
-      <div class="box"><h4>Contacts</h4>
-        <b>Kay Stepper</b> — President, Lucid Technologies &amp; Chief Digital Officer (owns AI, autonomy, enterprise IT)<br>
-        <b>Raja Ramana Macha</b> — CTO (ex-Eaton EVP/CTO) · New CEO: Silvio Napoli<br>
-        <a href="https://ir.lucidmotors.com/news-releases/news-release-details/silvio-napoli-assumes-role-ceo-lucid-following-completion/" target="_blank">C-suite overhaul, July 2026</a><br>
-        <span class="tag pill-purple">📌 Connect on LinkedIn</span>
+      <div class="day" style="color:#7b2d8b">Wednesday</div>
+      <div class="acct">Lucid Motors</div>
+      <div class="contacts">
+        <div class="nm">Raja Ramana Macha — CTO (ex-Eaton EVP/CTO)</div>
+        <div class="nm" style="margin-top:6px">Kay Stepper — President, Lucid Technologies &amp; Chief Digital Officer</div>
+        LinkedIn: <a href="https://www.linkedin.com/in/search/results/people/?keywords=Raja%20Macha%20Lucid" target="_blank">search "Raja Macha Lucid"</a>
+        <span class="pill" style="background:#f6eefa;color:#7b2d8b">📌 Connect on LinkedIn</span>
       </div>
-      <div class="box"><h4>Triggers</h4>
-        Q2 2026 (reported <b>Aug 4</b>): net loss &gt;$1B, adj loss $901.1M ($3.30/sh); produced 4,774 / delivered 3,953 (+24% / +20% YoY). Napoli halved CEO direct reports to "simplify structure &amp; sharpen accountability"; H2 production guided below consensus.
-        <div class="src"><a href="https://www.cnbc.com/2026/08/04/lucid-group-lcid-earnings-q2-2026.html" target="_blank">Source: CNBC Q2 2026</a> · <a href="https://electrek.co/2026/07/02/lucid-c-suite-overhaul-napoli/" target="_blank">C-suite overhaul</a></div>
+      <div class="lbl">Triggers</div>
+      <p style="font-size:13.5px;margin:4px 0">July 2026: sweeping C-suite overhaul under new CEO Silvio Napoli after 18% layoffs — new CFO, CTO, CDO, Chief Customer Officer, and Chief Transformation Officer all named. Fresh mandate, new leaders proving value fast. <a class="src" href="https://electrek.co/2026/07/02/lucid-c-suite-overhaul-napoli/" target="_blank">Source: Electrek, Jul 2, 2026</a></p>
+      <div class="callout co-purple">
+        <div class="lbl">Suggested Action</div>
+        A brand-new CTO and a Chief Transformation Officer = a 90-day-plan buying window. Email Macha (ex-Eaton, knows large-scale ops) congratulating the appointment; bridge to how new transformation leaders use process intelligence to find the cost + cycle-time wins their mandate demands, fast.
       </div>
-      <div class="callout co-purple"><b>Suggested action:</b> A brand-new CEO restructuring for accountability is the textbook Transformation entry. Reach Stepper (CDO owns enterprise IT) with a CEO-level frame: process intelligence gives Napoli a live map of where cash and cycle-time leak as he simplifies the org — evidence, not opinion, for the reorg.</div>
-      <div class="callout co-teal"><b>Use Case Spotlight — Order-to-Delivery / Cash-Cycle:</b> Sub-4K deliveries against a $1B loss means every dollar of cycle-time matters; Celonis exposes bottlenecks between production, logistics, and revenue recognition.</div>
+      <div class="callout co-teal">
+        <div class="lbl">Use Case Spotlight</div>
+        <b>Order-to-Cash / Cash Conversion</b> — post-layoff, cash discipline is survival; Celonis gives a new CTrO an instant, defensible baseline of where cash and cycle time leak.
+      </div>
     </div>
 
-    <!-- Thursday: Methode -->
+    <!-- THU Methode -->
     <div class="card lb">
-      <div class="dayhead"><div class="day" style="color:#7b2d8b;">Thursday</div><div class="acct">Methode Electronics</div></div>
-      <div class="box"><h4>Contacts</h4>
-        <b>Jon DeGaynor</b> — President &amp; CEO · <b>Laura Kowalchik</b> — CFO<br>
-        <a href="https://ir.methode.com/" target="_blank">Methode Investor Relations</a><br>
-        <span class="muted">No CIO/CTO surfaced via web search — try LinkedIn: "Methode Electronics" ("VP IT" OR "Head of Digital" OR "Chief Information")</span><br>
-        <span class="tag pill-purple">📌 Connect on LinkedIn</span>
+      <div class="day" style="color:#7b2d8b">Thursday</div>
+      <div class="acct">Methode Electronics</div>
+      <div class="contacts">
+        <div class="nm">Jon DeGaynor — CEO (leading the turnaround)</div>
+        LinkedIn: <a href="https://www.linkedin.com/in/search/results/people/?keywords=Jon%20DeGaynor%20Methode" target="_blank">search "Jon DeGaynor Methode"</a>
+        <span class="pill" style="background:#f6eefa;color:#7b2d8b">📌 Connect on LinkedIn</span>
       </div>
-      <div class="box"><h4>Triggers</h4>
-        Multi-phase turnaround: replaced <b>7 of 10 execs</b> &amp; 50%+ of top 100; sold dataMate; HQ relocating to Southfield; "from fix it to grow it," pivoting to power solutions for data centers, EVs, aerospace. FY2026 guidance $950M–$1.0B sales, $58–62M adj EBITDA.
-        <div class="src"><a href="https://finance.yahoo.com/markets/stocks/articles/methode-electronics-unveils-fy2026-guidance-000838010.html" target="_blank">Source: Methode FY2026 guidance / Oppenheimer</a></div>
+      <div class="lbl">Triggers</div>
+      <p style="font-size:13.5px;margin:4px 0">Q4 FY2026 (Jun): net sales +15.9% to $298.1M, returned to profit, Adj EBITDA $68.2M (+60.5% YoY). FY27 guide higher on ~60% data-center sales growth. DeGaynor: "a year of meaningful progress in Methode's transformation." <a class="src" href="https://www.stocktitan.net/news/MEI/methode-electronics-inc-reports-fiscal-2026-fourth-quarter-and-full-1g8ctt1gsqrr.html" target="_blank">Source: StockTitan FY2026 Q4</a></p>
+      <div class="callout co-purple">
+        <div class="lbl">Suggested Action</div>
+        DeGaynor is personally invested in the transformation narrative. Email him congratulating the EBITDA turn; frame process intelligence as the way to protect margin as data-center volume scales 60% — capacity ramps are where new inefficiency creeps in. Ask how he's keeping operational discipline while growing that fast.
       </div>
-      <div class="callout co-purple"><b>Suggested action:</b> A CFO-led turnaround under a fresh exec bench is a clean Modernization play. Email Kowalchik: touchless invoicing and days-to-close compression turn "fix it" into cash — self-funding the "grow it" pivot into data-center/EV power.</div>
-      <div class="callout co-teal"><b>Use Case Spotlight — Accounts Payable / Close Acceleration:</b> A turnaround CFO needs predictable cash and a faster close; Celonis targets 80%+ touchless AP and surfaces the process debt left by the old org.</div>
+      <div class="callout co-teal">
+        <div class="lbl">Use Case Spotlight</div>
+        <b>Purchase-to-Pay / Working Capital</b> — a balance-sheet-strengthening turnaround wants every dollar of trapped cash; Celonis AP plays (Florida Crystals: millions freed in &lt;1 year) map directly to DeGaynor's stated priorities.
+      </div>
     </div>
 
-    <!-- Friday: Visteon -->
+    <!-- FRI Visteon -->
     <div class="card lb">
-      <div class="dayhead"><div class="day" style="color:#7b2d8b;">Friday</div><div class="acct">Visteon</div></div>
-      <div class="box"><h4>Contacts</h4>
-        <b>Markus Schupfner</b> — CTO &amp; SVP (ex-Elektrobit) · <b>Raman Mehta</b> — CIO &amp; VP (since 2017)<br>
-        <a href="https://www.visteon.com/company/governance/executive-leadership/default.aspx" target="_blank">Visteon Executive Leadership</a><br>
-        <span class="tag pill-purple">📌 Connect on LinkedIn</span>
+      <div class="day" style="color:#7b2d8b">Friday</div>
+      <div class="acct">Visteon</div>
+      <div class="contacts">
+        <div class="nm">Raman Mehta — VP &amp; Chief Information Officer</div>
+        <div class="nm" style="margin-top:6px">Markus Schupfner — SVP &amp; CTO</div>
+        LinkedIn: <a href="https://www.linkedin.com/in/search/results/people/?keywords=Raman%20Mehta%20Visteon" target="_blank">search "Raman Mehta Visteon"</a>
+        <span class="pill" style="background:#f6eefa;color:#7b2d8b">📌 Connect on LinkedIn</span>
       </div>
-      <div class="box"><h4>Triggers</h4>
-        Q2 2026 (Jul 23): revenue <b>$960M</b> beat, but adj EPS $1.91 <b>missed</b> $2.21; secured <b>$2B new business awards</b> (60% from software-defined-vehicle portfolio); launched a $200M accelerated buyback; FY reaffirmed $3.625–3.825B.
-        <div class="src"><a href="https://www.investing.com/news/company-news/visteon-q2-2026-slides-product-wins-offset-weak-auto-production-93CH-4809514" target="_blank">Source: Visteon Q2 2026</a></div>
+      <div class="lbl">Triggers</div>
+      <p style="font-size:13.5px;margin:4px 0">Q2 2026 (Jul 23): net sales $960M, <b>$2B new business awards in the quarter</b> ($3B H1, 60% from software-defined-vehicle portfolio), 24 launches across 11 OEMs — but adj EPS $1.91 missed $2.21 on margin compression; $200M accelerated buyback. <a class="src" href="https://autonews.gasgoo.com/articles/news/visteon-q2-2026-net-sales-960-million-new-business-orders-reach-2-billion-2082448555347247105" target="_blank">Source: Gasgoo Q2 2026</a></p>
+      <div class="callout co-purple">
+        <div class="lbl">Suggested Action</div>
+        Record bookings + margin miss = a scaling-execution story. Email Mehta (CIO since 2017, stable seat): the challenge in ramping $3B of SDV wins is holding margin through launch complexity. Position process intelligence over their launch and O2C processes. Ask what visibility he has into launch-to-launch variance across 11 OEMs.
       </div>
-      <div class="callout co-purple"><b>Suggested action:</b> $2B in SDV awards means launch execution is the whole story. Email Mehta (CIO): as SDV programs scale, process intelligence keeps program launch velocity and engineering-change cycle-time from eroding the margin the EPS miss just flagged.</div>
-      <div class="callout co-teal"><b>Use Case Spotlight — New Product / Program Launch:</b> Rapid SDV award intake needs conformance across engineering-change and quote-to-launch; Celonis keeps ramping programs on-time as volume compounds.</div>
+      <div class="callout co-teal">
+        <div class="lbl">Use Case Spotlight</div>
+        <b>Inventory &amp; Supply-Chain Transparency</b> — 24 simultaneous launches strain the supply chain; MAHLE's 20% inventory reduction shows the margin-recovery angle Visteon's miss is begging for.
+      </div>
     </div>
 
   </div>
@@ -187,34 +227,38 @@
 
 <!-- ============ SECTION 2 ============ -->
 <section id="usecases">
-  <div class="sec-title">
-    <div class="badge" style="background:#16a085;">2</div>
-    <div><h2>Evergreen Use Cases</h2><div class="sub">Sourced from celonis.com customer stories</div></div>
-  </div>
-  <div class="grid2">
+  <div class="sec-head"><div class="badge" style="background:#16a085">2</div><h2>Celonis Use Cases</h2></div>
+  <p class="sec-sub">Evergreen use cases — sourced from celonis.com customer stories, mapped to this account list.</p>
+  <div class="grid3">
 
-    <div class="card lt">
-      <b style="font-size:18px;">Accounts Payable &amp; Procure-to-Pay</b> <span class="tag pill-teal">Finance</span>
-      <p style="margin-top:8px;font-size:14px;">Celonis maps every P2P and AP transaction to expose maverick spend, missed discounts, duplicate payments, and payment-term leakage — driving touchless invoicing and DPO discipline. Renault Group realized its first €1M in value within three months and <b>€15M in the first 12 months</b> via a structured Center of Excellence.</p>
-      <div class="chips"><span class="chip">Cooper Standard</span><span class="chip">Methode</span><span class="chip">Visteon</span><span class="chip">Denso</span><span class="chip">Dauch</span></div>
-      <p style="margin-top:8px;font-size:13px;"><b>Why it applies:</b> These suppliers face tariff and refinancing cost pressure where every point of working-capital efficiency defends margin.</p>
-      <div class="src"><a href="https://www.celonis.com/solutions/stories/renault-procure-to-pay" target="_blank">Source: Renault Group P2P story</a></div>
+    <div class="card tt">
+      <span class="tag" style="background:#16a085">Supply Chain</span>
+      <h3 class="cardt">Inventory &amp; Supply-Chain Transparency</h3>
+      <p style="font-size:13.5px">Real-time visibility into inventory, supplier delivery, and where working capital is trapped across a multi-plant footprint. Automotive supplier MAHLE cut <b>group-wide inventory 20%</b> and forecasts inventory in real time to fulfill orders faster and stay resilient to disruption.</p>
+      <div class="lbl">Best-fit accounts</div>
+      <div><span class="chip">Cooper Standard</span><span class="chip">Visteon</span><span class="chip">Denso</span><span class="chip">Adient</span><span class="chip">Aisin</span></div>
+      <p style="font-size:12.5px;margin-top:8px"><b>Why it applies:</b> These are multi-plant Tier-1 suppliers where inventory and supplier variability directly hit margin — exactly MAHLE's starting point.</p>
+      <a class="src" href="https://www.celonis.com/solutions/stories/mahle-inventory-management" target="_blank">Source: Celonis — MAHLE story</a>
     </div>
 
-    <div class="card lt">
-      <b style="font-size:18px;">Inventory &amp; Order Management</b> <span class="tag pill-teal">Supply Chain</span>
-      <p style="margin-top:8px;font-size:14px;">MAHLE (€13B+ automotive supplier) built a single source of truth in the Celonis Control Center linking all inventory-relevant factors, so teams can view and control inventory effects worldwide in real time — after first optimizing AP, procurement, and order management.</p>
-      <div class="chips"><span class="chip">Gentex</span><span class="chip">Gentherm</span><span class="chip">Adient</span><span class="chip">Aisin</span><span class="chip">Yazaki</span></div>
-      <p style="margin-top:8px;font-size:13px;"><b>Why it applies:</b> Component makers navigating a ~3% global light-vehicle production decline must avoid inventory/demand mismatch across many plants.</p>
-      <div class="src"><a href="https://www.celonis.com/solutions/stories/mahle-inventory-management" target="_blank">Source: MAHLE inventory story</a></div>
+    <div class="card tt">
+      <span class="tag" style="background:#16a085">Finance</span>
+      <h3 class="cardt">Accounts Payable &amp; Working Capital</h3>
+      <p style="font-size:13.5px">Free trapped cash by prioritizing invoices by cash-flow impact, capturing early-payment discounts, and eliminating rework. Florida Crystals unlocked <b>millions in working capital in under a year</b>; Deutsche Telekom hit a 96% cash-discount rate and saved €10M+ in one year.</p>
+      <div class="lbl">Best-fit accounts</div>
+      <div><span class="chip">Methode</span><span class="chip">Cooper Standard</span><span class="chip">Stellantis Fin. Svcs</span><span class="chip">LKQ</span></div>
+      <p style="font-size:12.5px;margin-top:8px"><b>Why it applies:</b> Turnaround and restructuring accounts (Methode, Cooper Standard) are hunting for balance-sheet cash — AP is the fastest, lowest-friction proof point.</p>
+      <a class="src" href="https://www.celonis.com/solutions/stories/florida-crystals-accounts-payable" target="_blank">Source: Celonis — Florida Crystals story</a>
     </div>
 
-    <div class="card lt">
-      <b style="font-size:18px;">M&amp;A / Integration Process Baseline</b> <span class="tag pill-teal">Transformation</span>
-      <p style="margin-top:8px;font-size:14px;">Before integration workstreams lock, a combined company needs an objective, data-driven baseline of how both businesses actually run. Celonis reconstructs end-to-end processes from transactional data (as Mythics now does at the start of Oracle transformations), so the integration office standardizes on the better process instead of guessing.</p>
-      <div class="chips"><span class="chip">Dana + Eaton</span><span class="chip">Dauch + Dowlais</span><span class="chip">Gentherm + Modine</span></div>
-      <p style="margin-top:8px;font-size:13px;"><b>Why it applies:</b> Three target accounts are mid-integration in 2026–27 — the exact window where a process baseline drives synergy capture.</p>
-      <div class="src"><a href="https://www.prnewswire.com/news-releases/mythics-and-celonis-join-forces-to-accelerate-ai-driven-oracle-transformations-302821319.html" target="_blank">Source: Mythics + Celonis (Jul 2026)</a></div>
+    <div class="card tt">
+      <span class="tag" style="background:#16a085">Finance</span>
+      <h3 class="cardt">Order-to-Cash &amp; DSO Reduction</h3>
+      <p style="font-size:13.5px">Speed invoice submission and acceptance to convert receivables to cash faster. Celonis customer IQVIA dropped submission-to-acceptance time sharply — and <b>one day of DSO equals ~$40M of free cash flow</b>; Accenture delivered $35M annualized working-capital benefit.</p>
+      <div class="lbl">Best-fit accounts</div>
+      <div><span class="chip">Gentex</span><span class="chip">Lucid</span><span class="chip">Visteon</span><span class="chip">Stellantis NA</span></div>
+      <p style="font-size:12.5px;margin-top:8px"><b>Why it applies:</b> Accounts merging entities (Gentex/VOXX) or under fresh cash discipline (Lucid post-layoff) need O2C variance eliminated before it compounds.</p>
+      <a class="src" href="https://www.celonis.com/blog/days-sales-outstanding-dso-understanding-key-business-metrics" target="_blank">Source: Celonis — DSO / IQVIA</a>
     </div>
 
   </div>
@@ -222,160 +266,175 @@
 
 <!-- ============ SECTION 3 ============ -->
 <section id="triggers">
-  <div class="sec-title">
-    <div class="badge" style="background:#16a085;">3</div>
-    <div><h2>Target Account Buying Triggers</h2><div class="sub">Top-10 priority accounts</div></div>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#16a085">3</div><h2>Target Account Buying Triggers</h2></div>
+  <p class="sec-sub">Top-10 highest-priority accounts — fresh signals from Q2/Q3 2026 earnings and strategic moves.</p>
+
   <div class="grid2">
 
     <div class="card tt">
-      <b style="font-size:20px;">Stellantis North America</b> <span class="tag pill-teal">Earnings Turnaround</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>What happened:</b> Q2 2026 net profit €293M (from −€1.87B loss); NA shipments +38%, NA revenue +32% to €18.2B, NA margin 1.6% (+480 bps). Leadership reshuffle continues; €1.0–1.2B FY tariff headwind.</p>
-      <p style="font-size:13.5px;"><b>Priority:</b> Sustain the NA-led turnaround while absorbing tariff cost.</p>
-      <p style="font-size:13.5px;"><b>Celonis angle:</b> Process intelligence quantifies where tariff-driven cost and cycle-time hide across supply chain &amp; manufacturing — evidence for the AI Transformation office.</p>
-      <div class="callout co-green"><i>Hook (via AI office, US roster only): "As NA carries the turnaround, where does the AI office see the next point of margin — process cost or cycle-time?"</i></div>
-      <div class="callout co-red" style="font-size:12.5px;"><b>⚠ Guardrail:</b> GAM Thierry owns Thiele &amp; Quentin — never touch. Grant's lane = US roster below their level (Tim Fallon, Mark Silk, Diana Wagner, Lou Gasevski, Nick Lang, Alison Jones, Bonnie Ven Etten, Xavier Chereau). Coordinate with Thierry before any touch near the AI office.</div>
-      <div class="src"><a href="https://www.stocktitan.net/news/STLA/stellantis-reports-q2-2026-financial-g0z8mcuha0s0.html" target="_blank">Source: Stellantis Q2 2026</a></div>
+      <div class="acct sm">Stellantis North America <span class="tag" style="background:#16a085">Turnaround</span></div>
+      <div class="lbl">What happened</div>
+      <p style="font-size:13.5px;margin:2px 0">Q2 2026: net profit €293M (swing from −€1.87B), NA revenue +32% to €18.2B, operating income nearly 4×. FaSTLAne €60B 5-year plan; STLA Brain / SmartCockpit / AutoDrive AI tech launching 2027.</p>
+      <div class="lbl">Business priority</div>
+      <p style="font-size:13.5px;margin:2px 0">Filosa: "nothing can be fixed overnight" — a multi-year cost + AI transformation with NA as the growth engine.</p>
+      <div class="lbl">Celonis angle</div>
+      <p style="font-size:13.5px;margin:2px 0">The AI Transformation office needs a context layer under STLA Brain — process reality to ground the AI. Coordinate via GAM Thierry; work the NA function AI Leads (see BDR section).</p>
+      <div class="callout co-green"><i>"As STLA Brain moves toward 2027, what's grounding those agents in how your NA processes actually run today?"</i></div>
+      <a class="src" href="https://www.detroitnews.com/story/business/autos/2026/07/30/stellantis-profitable-in-second-quarter-but-investors-skeptical/91098634007/" target="_blank">Source: Detroit News, Jul 30, 2026</a>
     </div>
 
     <div class="card tt">
-      <b style="font-size:20px;">Dana Incorporated</b> <span class="tag pill-teal">M&amp;A · Warm Thread</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>What happened:</b> Combining with Eaton's Mobility business ($5.1B Reverse Morris Trust, ~$11B combined sales); targets $250M run-rate synergies in 24 months; expected close <b>Q1 2027</b>. Byron Foster CEO &amp; Bruce McDonald Exec Chairman (leading integration), both effective Jul 1, 2026.</p>
-      <p style="font-size:13.5px;"><b>Priority:</b> Integration office needs a process baseline of both companies before workstreams lock.</p>
-      <p style="font-size:13.5px;"><b>Celonis angle:</b> Objective baseline = faster synergy capture toward the $250M target.</p>
-      <div class="callout co-green"><i>Live thread — Seth Metzger connected Grant with Kevin Williams (leading Eaton integration). Feed McDonald's "integration &amp; synergy" mandate + the Q1 2027 close into the Williams talking points. Peer proof: Dauch/Dowlais &amp; Gentherm/Modine.</i></div>
-      <div class="src"><a href="https://www.dana.com/newsroom/press-releases/dana-incorporated-announces-agreement-to-combine-with-eatons-mobility-business-strengthens-danas-position-as-a-leading-global-powertrain-systems-provider/" target="_blank">Source: Dana + Eaton Mobility</a></div>
+      <div class="acct sm">Dana Incorporated <span class="tag" style="background:#16a085">M&amp;A · Warm</span></div>
+      <div class="lbl">What happened</div>
+      <p style="font-size:13.5px;margin:2px 0">Combining with Eaton's Mobility business — $5.1B Reverse Morris Trust, ~$11B combined sales, $250M run-rate synergies within 24 mo, close expected Q1 2027.</p>
+      <div class="lbl">Business priority</div>
+      <p style="font-size:13.5px;margin:2px 0">Integration office must baseline both companies' processes before workstreams lock (deal thesis for Grant's warm Kevin Williams thread).</p>
+      <div class="lbl">Celonis angle</div>
+      <p style="font-size:13.5px;margin:2px 0">Merger integration = the canonical Celonis "baseline two estates" play; peer proof: Dauch/Dowlais and Gentherm/Modine PT integrations.</p>
+      <div class="callout co-green"><i>"Before the Eaton workstreams lock, how are you baselining both companies' core processes so synergy targets are measurable, not just modeled?"</i></div>
+      <a class="src" href="https://www.businesswire.com/news/home/20260611592639/en/Eaton-Advances-2030-Growth-Strategy-with-Announcement-to-Combine-Mobility-Group-with-Dana-Incorporated" target="_blank">Source: BusinessWire, Jun 2026</a>
     </div>
 
     <div class="card tt">
-      <b style="font-size:20px;">Gentherm</b> <span class="tag pill-teal">Record Q2 · Merger</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>What happened:</b> Q2 2026 record revenue $416M (+11%), adj EPS $0.75; <b>raised</b> FY guidance to ~$1.6B; 12.7% organic growth vs. −3% LV production. <b>Modine Performance Technologies merger closing early Q4 2026</b>; $400M buyback; IME acquisition closed Jul 1.</p>
-      <p style="font-size:13.5px;"><b>Priority:</b> Integrate Modine PT while sustaining outperformance.</p>
-      <p style="font-size:13.5px;"><b>Celonis angle:</b> Integration baseline + inventory control across a scaling footprint.</p>
-      <div class="callout co-green"><i>Hook: "With the Modine PT close in early Q4, is the integration team baselining both process estates before workstreams lock — or reconciling after?"</i></div>
-      <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/23/3331951/0/en/Gentherm-Reports-2026-Second-Quarter-Results-and-Announces-a-New-Increased-Stock-Repurchase-Authorization.html" target="_blank">Source: Gentherm Q2 2026</a></div>
+      <div class="acct sm">Adient <span class="tag" style="background:#16a085">Margin Watch</span></div>
+      <div class="lbl">What happened</div>
+      <p style="font-size:13.5px;margin:2px 0">Q3 FY2026 (Aug 5): net sales $3,929M (up from $3,741M) but net income down to $25M; Adj EBITDA margin slipped to 5.7% from 6.0%; FY26 FCF guide held ~$130M.</p>
+      <div class="lbl">Business priority</div>
+      <p style="font-size:13.5px;margin:2px 0">Revenue growing, margin compressing — classic operational-efficiency mandate.</p>
+      <div class="lbl">Celonis angle</div>
+      <p style="font-size:13.5px;margin:2px 0">Margin leak on rising volume is exactly what process intelligence isolates across a global seating footprint.</p>
+      <div class="callout co-green"><i>"Sales up, EBITDA margin down 30bps — where in the operational flow is that spread landing?"</i></div>
+      <a class="src" href="https://www.prnewswire.com/news-releases/adient-reports-third-quarter-financial-results-reaffirms-earnings-and-fcf-outlook-for-fy26-302842873.html" target="_blank">Source: PRNewswire Q3 FY26</a>
     </div>
 
     <div class="card tt">
-      <b style="font-size:20px;">Denso (North America)</b> <span class="tag pill-teal">Margin Pressure</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>What happened:</b> Q1 FY2026 (qtr ended Jun 30): global revenue ¥1,913.9B (+9.1%) but operating profit <b>−21.5%</b> on rising costs/investment. NA revenue +13.7% to ¥538.1B, NA op profit +12.1%.</p>
-      <p style="font-size:13.5px;"><b>Priority:</b> Grow the top line without letting cost/investment erode profit.</p>
-      <p style="font-size:13.5px;"><b>Celonis angle:</b> Process intelligence isolates the cost drivers behind the 21.5% op-profit drop — where spend is going without return.</p>
-      <div class="callout co-green"><i>Hook: "Revenue's up 9% but op profit is down 21% — which processes are absorbing the investment without returning it yet?"</i></div>
-      <div class="src"><a href="https://www.ajot.com/news/denso-announces-first-quarter-financial-results" target="_blank">Source: Denso Q1 FY2026</a></div>
-    </div>
-
-    <div class="card tt">
-      <b style="font-size:20px;">Dauch Corporation</b> <span class="tag pill-teal">Post-Merger Integration</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>What happened:</b> Completed the $1.44B Dowlais (GKN Automotive + Powder Metallurgy) acquisition <b>Feb 3, 2026</b>; rebranded from American Axle; deal roughly doubles company size. David Dauch remains Chairman &amp; CEO; now trades as "DCH."</p>
-      <p style="font-size:13.5px;"><b>Priority:</b> Integrate a doubled footprint and deliver deal synergies.</p>
-      <p style="font-size:13.5px;"><b>Celonis angle:</b> Six months post-close is prime time to standardize on the better process across legacy AAM + GKN systems.</p>
-      <div class="callout co-green"><i>Hook: "Six months into the Dowlais integration — is the team standardizing on one process, or still running two of everything?"</i></div>
-      <div class="src"><a href="https://www.aam.com/suppliers/doing-business-with-aam/dauch-corporation-(formerly-aam)-and-dowlais-group-(gkn)-combination-complete" target="_blank">Source: Dauch/Dowlais close</a></div>
-    </div>
-
-    <div class="card tt">
-      <b style="font-size:20px;">Adient</b> <span class="tag pill-teal">Earnings Today</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>What happened:</b> Reports Q3 FY2026 <b>this morning (Aug 5)</b>, call 8:30 a.m. ET. Q2 beat ($0.52 vs $0.44 est; $3.87B revenue). Analysts expect $0.56 EPS / $3.71B for Q3.</p>
-      <p style="font-size:13.5px;"><b>Priority:</b> Sustain the margin beat amid soft global production.</p>
-      <p style="font-size:13.5px;"><b>Celonis angle:</b> Time outreach to today's print — reference the actual result once released.</p>
-      <div class="callout co-green"><i>Hook (post-print): "Saw this morning's numbers — as seating volume normalizes, where's the next point of process cost you're targeting?"</i></div>
-      <div class="src"><a href="https://www.stocktitan.net/news/ADNT/adient-to-discuss-q3-fiscal-2026-financial-results-on-august-5-toegiv1odhkm.html" target="_blank">Source: Adient Q3 FY2026 call</a></div>
+      <div class="acct sm">Denso International America <span class="tag" style="background:#16a085">Expansion</span></div>
+      <div class="lbl">What happened</div>
+      <p style="font-size:13.5px;margin:2px 0">FY2026 NA revenue $12.7B (+8.7%); investing $69M in a new advanced logistics center in Lebanon (robotics/automation, opens spring 2027). FY27 profit forecast down on stepped-up investment.</p>
+      <div class="lbl">Business priority</div>
+      <p style="font-size:13.5px;margin:2px 0">Automating logistics + absorbing higher investment — needs efficiency to protect FY27 profit.</p>
+      <div class="lbl">Celonis angle</div>
+      <p style="font-size:13.5px;margin:2px 0">New automated logistics footprint is a greenfield for process baselining before the physical automation locks in bad flows.</p>
+      <div class="callout co-green"><i>"As the Lebanon automation center comes online, how are you validating the process design before the robotics harden it?"</i></div>
+      <a class="src" href="https://www.aol.com/articles/denso-invest-69m-building-relocation-215356265.html" target="_blank">Source: AOL / Aftermarket News</a>
     </div>
 
   </div>
 
-  <p class="muted" style="margin-top:14px;">No fresh trigger this run: Inteva Products, Stellantis Financial Services, Yazaki North America, Aisin World Corp. of America.</p>
-  <div class="callout co-blue" style="margin-top:14px;"><b>Evergreen Outreach:</b> Every automotive supplier in this list runs a mixed ERP estate (SAP, Oracle, Plex, QAD, mainframe) under tariff and production-decline pressure. The constant is that no single system shows the end-to-end process — that gap is Celonis's opening on any account, trigger or not.</div>
+  <div class="callout co-blue" style="margin-top:16px">
+    <div class="lbl">No update this run</div>
+    Inteva Products, Stellantis Financial Services, Gentherm (M&amp;A-related Form 425 filing only), Yazaki North America, Aisin World Corp. — no fresh public trigger surfaced this run; monitor next rotation.
+  </div>
+  <div class="callout co-blue">
+    <div class="lbl">Evergreen Outreach</div>
+    Every Tier-1 auto supplier faces the same 2026 squeeze: flat/declining OEM volumes, tariff noise, and margin pressure. The evergreen hook is <b>"do more with the cost base you already have"</b> — process intelligence turns cost programs into measurable, durable savings rather than one-time charges.
+  </div>
 </section>
 
 <!-- ============ SECTION 4 ============ -->
 <section id="competitors">
-  <div class="sec-title">
-    <div class="badge" style="background:#16a085;">4</div>
-    <div><h2>Competitor Intel</h2><div class="sub">Discovered active — Jul–Aug 2026</div></div>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#16a085">4</div><h2>Competitor Intel</h2></div>
+  <p class="sec-sub">Discovered competitive set — everyone now claiming the "context layer" / process-intelligence ground.</p>
+
   <div class="grid2">
 
     <div class="card">
-      <b style="font-size:18px;">SAP Signavio</b> <span class="tag pill-blue">May 2026</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>Facts:</b> May 2026 release adds Process Networks, Process Atoms, and AI next-best-action; merges Process Insights + Process Intelligence into one interface. Rapidly gaining share inside existing SAP landscapes.</p>
-      <p style="font-size:13.5px;"><b>Risk:</b> "It's already in our SAP contract" objection at SAP-heavy accounts (Denso, Aisin, Stellantis).</p>
-      <p style="font-size:13.5px;"><b>Celonis counter:</b> Signavio sees SAP; these suppliers run SAP <i>plus</i> Plex, QAD, Oracle, MES, and mainframe. End-to-end truth lives across systems.</p>
-      <div class="callout co-yellow"><i>Discovery: "How much of your critical process actually lives inside SAP vs. the plant-floor and finance systems around it?"</i></div>
-      <div class="src"><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/sap-signavio-may-2026-release-unlock-next-gen-process-intelligence-with-the/ba-p/14400741" target="_blank">Source: SAP Signavio May 2026 release</a></div>
+      <h3 class="cardt">ServiceNow <span class="pill" style="background:#eef1fb;color:#2d4cb8">Knowledge 2026</span></h3>
+      <div class="lbl">Confirmed facts</div>
+      <p style="font-size:13.5px;margin:2px 0">At Knowledge 2026, CEO McDermott pitched "chaos to control with a guarantee." With NVIDIA's Jensen Huang, launched Project Arc — autonomous agents that navigate a desktop like a human, ServiceNow providing the governance/workflow layer.</p>
+      <div class="lbl">Competitive risk</div>
+      <p style="font-size:13.5px;margin:2px 0">ServiceNow is aggressively positioning as the enterprise agent + workflow layer, encroaching on "run your operations from here."</p>
+      <div class="lbl">Celonis counter</div>
+      <p style="font-size:13.5px;margin:2px 0">Agents that navigate screens still don't know how the <i>business process</i> actually runs. Celonis supplies the process context and reality ServiceNow's agents lack.</p>
+      <div class="callout co-yellow"><i>"Your ServiceNow agents can act — but what's telling them which of your process variants is the right one to act on?"</i></div>
+      <a class="src" href="https://cxfoundation.com/news/servicenow-knowledge-2026-announcements" target="_blank">Source: CX Foundation — Knowledge 2026</a>
     </div>
 
     <div class="card">
-      <b style="font-size:18px;">Databricks</b> <span class="tag pill-blue">Jun 2026</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>Facts:</b> At Data + AI Summit 2026, Ali Ghodsi framed AI's "context problem" and shipped Genie Ontology, Unity Catalog Metrics, Business Glossary, Lakebase, and LTAP — positioning Databricks as the enterprise context layer.</p>
-      <p style="font-size:13.5px;"><b>Risk:</b> Data-platform buyers may believe the warehouse already <i>is</i> the context layer.</p>
-      <p style="font-size:13.5px;"><b>Celonis counter:</b> A catalog describes data; it doesn't model how a process actually executes, conforms, and where it breaks. Celonis is the process context layer on top.</p>
-      <div class="callout co-yellow"><i>Discovery: "Your lakehouse knows what the data is — does it know how the order-to-cash process actually ran last month, step by step?"</i></div>
-      <div class="src"><a href="https://www.mastechdigital.com/blogs/from-models-to-context-enterprise-ai-investment-dais-2026" target="_blank">Source: Databricks DAIS 2026</a></div>
+      <h3 class="cardt">SAP Signavio <span class="pill" style="background:#fdeeee;color:#c0392b">Mindshare ↓</span></h3>
+      <div class="lbl">Confirmed facts</div>
+      <p style="font-size:13.5px;margin:2px 0">July 2026 process-mining mindshare fell to 5.8% (from 8.9% a year ago). Pricing $75K–$150K, strongest only where the customer runs S/4HANA data connectivity.</p>
+      <div class="lbl">Competitive risk</div>
+      <p style="font-size:13.5px;margin:2px 0">Default "good enough" choice inside SAP-committed shops; bundled into S/4HANA conversations.</p>
+      <div class="lbl">Celonis counter</div>
+      <p style="font-size:13.5px;margin:2px 0">Signavio effectively only sees SAP. Auto suppliers run mixed estates (SAP + legacy MES + finance) — Celonis spans them; Signavio can't.</p>
+      <div class="callout co-yellow"><i>"Signavio reads your S/4HANA — but your processes cross SAP, your MES, and your finance systems. What happens to the 40% it can't see?"</i></div>
+      <a class="src" href="https://www.peerspot.com/products/comparisons/sap-signavio-process-intelligence_vs_uipath-process-mining?rr=t" target="_blank">Source: PeerSpot 2026 comparison</a>
     </div>
 
     <div class="card">
-      <b style="font-size:18px;">Salesforce (Apromore / Agentforce)</b> <span class="tag pill-blue">Jul 2026</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>Facts:</b> Salesforce folded Apromore into Agentforce, embedding process mining directly beneath its agent layer to decide what to automate.</p>
-      <p style="font-size:13.5px;"><b>Risk:</b> Bundled "good-enough" mining for Salesforce-centric workflows.</p>
-      <p style="font-size:13.5px;"><b>Celonis counter:</b> Agentforce mines Salesforce-adjacent flows; manufacturing value lives in ERP/MES/supply chain, not the CRM. Celonis spans the enterprise and now feeds agents via its Context Model.</p>
-      <div class="callout co-yellow"><i>Discovery: "Is the process you most want to fix inside Salesforce — or in the ERP and plant systems Agentforce can't see?"</i></div>
-      <div class="src"><a href="https://www.kai-waehner.de/blog/2026/07/22/process-intelligence-landscape-2026-mining-orchestration-and-the-agentic-ai-shift/" target="_blank">Source: Process Intelligence Landscape 2026</a></div>
+      <h3 class="cardt">UiPath Process Mining <span class="pill" style="background:#fdeeee;color:#c0392b">Mindshare ↓</span></h3>
+      <div class="lbl">Confirmed facts</div>
+      <p style="font-size:13.5px;margin:2px 0">Mindshare 5.5% (from 6.6%). Continues bridging mining findings directly to RPA automation candidates — automation-first positioning.</p>
+      <div class="lbl">Competitive risk</div>
+      <p style="font-size:13.5px;margin:2px 0">Attractive where the buyer already owns UiPath RPA and wants "find-and-automate" loops.</p>
+      <div class="lbl">Celonis counter</div>
+      <p style="font-size:13.5px;margin:2px 0">Automating a broken process just makes it fail faster. Celonis leads with understanding + value quantification, then orchestrates — not RPA-first.</p>
+      <div class="callout co-yellow"><i>"UiPath will automate the task fastest — but how do you know it's the right task, and what's it worth before you build the bot?"</i></div>
+      <a class="src" href="https://kyp.ai/process-mining-software-comparison/" target="_blank">Source: KYP.ai comparison 2026</a>
     </div>
 
     <div class="card">
-      <b style="font-size:18px;">ServiceNow</b> <span class="tag pill-blue">Partner + Watch</span>
-      <p style="margin-top:8px;font-size:13.5px;"><b>Facts:</b> ServiceNow and Celonis run a strategic partnership — cross-sell, joint GTM, and co-developed solutions to identify processes worth automating, then build the workflows in ServiceNow.</p>
-      <p style="font-size:13.5px;"><b>Risk:</b> Where a customer is ServiceNow-first, reps may hear "we'll just use their process capability."</p>
-      <p style="font-size:13.5px;"><b>Celonis counter:</b> Lead with the partnership — Celonis finds &amp; prioritizes; ServiceNow executes the workflow. It's a "1+1" story, not a bake-off.</p>
-      <div class="callout co-yellow"><i>Discovery: "You're standardizing on ServiceNow for workflow — how are you deciding which processes are actually worth automating first?"</i></div>
-      <div class="src"><a href="https://www.celonis.com/press/servicenow-partnership/" target="_blank">Source: ServiceNow + Celonis partnership</a></div>
+      <h3 class="cardt">"Context Layer" Land Grab <span class="pill" style="background:#eef1fb;color:#2d4cb8">Aug 2026</span></h3>
+      <div class="lbl">Confirmed facts</div>
+      <p style="font-size:13.5px;margin:2px 0">ThoughtSpot ("AI semantic layer"), Databricks, and others now market a "context layer / semantic layer" as the foundation for enterprise AI agents — the exact term Celonis defined with its Context Model.</p>
+      <div class="lbl">Competitive risk</div>
+      <p style="font-size:13.5px;margin:2px 0">Term dilution: BI and data-stack players claim "context" and muddy the buyer's evaluation.</p>
+      <div class="lbl">Celonis counter</div>
+      <p style="font-size:13.5px;margin:2px 0">A semantic layer over data ≠ a process/execution context. Celonis is the only one grounding AI in how work actually flows, end-to-end, with a live process twin.</p>
+      <div class="callout co-yellow"><i>"Everyone's selling 'context' now — does theirs know your actual process execution, or just your data schema?"</i></div>
+      <a class="src" href="https://www.hpcwire.com/aiwire/2026/08/05/why-the-ai-semantic-layer-is-becoming-the-foundation-of-enterprise-ai/" target="_blank">Source: AIwire, Aug 5, 2026</a>
     </div>
 
   </div>
-  <div class="callout co-blue" style="margin-top:14px;"><b>Evergreen Watch:</b> "Context layer" is now contested vocabulary (Databricks, MCP standard adopters, Salesforce). Celonis's differentiator is the <i>process</i> context layer — the only one that models real execution, conformance, and value, and feeds it to agents. Piston-account watch: QAD Process Intelligence (Livejourney) — only sees QAD.</div>
-  <p class="muted" style="margin-top:10px;">No update this run: UiPath, Microsoft Power Automate, IBM, ABBYY, Palantir, Pega, Appian.</p>
+
+  <div class="callout co-blue" style="margin-top:16px">
+    <div class="lbl">Evergreen Watch</div>
+    Watch the agent + context convergence: Microsoft (Power Automate + Copilot), ServiceNow (Project Arc), and Databricks are all racing to own "the layer AI agents run on." Celonis's defensible ground is <b>process execution reality</b> — keep every conversation there.
+  </div>
+  <div class="callout co-blue">
+    <div class="lbl">No update this run</div>
+    Microsoft Power Automate (no new process-mining-specific announcement), IBM, ABBYY, Palantir, Pega, Appian, Snowflake, Atlan — no sourced update surfaced this run.
+  </div>
 </section>
 
 <!-- ============ SECTION 5 ============ -->
 <section id="news">
-  <div class="sec-title">
-    <div class="badge" style="background:#c46916;">5</div>
-    <div><h2>Celonis News &amp; ICP Relevance</h2><div class="sub">Real, sourced — recent</div></div>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#c46916">5</div><h2>Celonis News &amp; ICP Relevance</h2></div>
+  <p class="sec-sub">Recent Celonis moves and who cares in the buying committee.</p>
+
   <div class="grid2">
 
     <div class="card">
-      <span class="tag pill-orange">Customer Win</span>
-      <p style="margin-top:8px;font-weight:800;font-size:16px;">Mondelēz picks Celonis as strategic AI backbone</p>
-      <p style="margin-top:6px;font-size:13.5px;">Mondelēz named Celonis its vendor-neutral backbone to industrialize enterprise AI — <b>$10M value unlocked in 18 months</b>, with $6M+ recovered in 90 days by plugging credit-memo leakage (Jul 28, 2026).</p>
-      <div class="callout co-yellow"><b>ICP:</b> CFO / VP Finance. The credit-memo leakage story is a near-perfect analog for AP/O2C leakage at Cooper Standard, Methode, and Visteon — lead with the 90-day $6M number.</div>
-      <div class="src"><a href="https://www.celonis.com/news/press/mondelez-international-selects-celonis-as-strategic-partner-to-industrialize-enterprise-ai" target="_blank">Source: Celonis newsroom</a></div>
+      <span class="tag" style="background:#c46916">Product Launch</span>
+      <h3 class="cardt">Celonis Context Model + Ikigai Labs acquisition</h3>
+      <p style="font-size:13.5px">Celonis launched the Context Model (CCM) to define the enterprise "context layer" — unifying process data, business knowledge, and decision intelligence to ground enterprise AI — and agreed to acquire AI decision-intelligence leader Ikigai Labs (MIT takes an equity stake for a patent license).</p>
+      <div class="callout co-yellow"><b>CIO / Chief AI Officer</b> — this is the anti-"AI pilot that goes nowhere" story. Lead with it to every exec whose AI agenda is under board scrutiny (Lucid's new CTrO, Stellantis AI office).</div>
+      <a class="src" href="https://www.celonis.com/news/press/celonis-launches-the-context-model-to-eliminate-enterprise-ais-operational-blind-spots-agrees-to-acquire-ai-decision-intelligence-leader-ikigai-labs" target="_blank">Source: Celonis newsroom</a>
     </div>
 
     <div class="card">
-      <span class="tag pill-orange">Partnership</span>
-      <p style="margin-top:8px;font-weight:800;font-size:16px;">Mythics + Celonis for Oracle transformations</p>
-      <p style="margin-top:6px;font-size:13.5px;">Mythics now embeds Celonis at the earliest phase of its Oracle methodology — reconstructing how processes actually run to surface bottlenecks before design begins (Jul 9, 2026).</p>
-      <div class="callout co-yellow"><b>ICP:</b> CIO. For accounts mid-ERP-move or integration (Dauch, Dana, Denso), this proves process intelligence de-risks the transformation up front.</div>
-      <div class="src"><a href="https://www.prnewswire.com/news-releases/mythics-and-celonis-join-forces-to-accelerate-ai-driven-oracle-transformations-302821319.html" target="_blank">Source: PR Newswire</a></div>
+      <span class="tag" style="background:#c46916">Partnership</span>
+      <h3 class="cardt">Celonis + Databricks</h3>
+      <p style="font-size:13.5px">Celonis partnered with Databricks to operationalize AI — pairing the process context layer with Databricks' data + AI platform so agents run on real process context, not just raw data.</p>
+      <div class="callout co-yellow"><b>CIO / Data &amp; Analytics VP</b> — for accounts standardizing on Databricks/lakehouse (common in modern auto data teams), this removes the "build vs. buy the context layer" objection.</div>
+      <a class="src" href="https://www.processexcellencenetwork.com/process-mining/news/celonis-partners-with-databricks-to-operationalize-ai" target="_blank">Source: Process Excellence Network</a>
     </div>
 
     <div class="card">
-      <span class="tag pill-orange">Product Launch</span>
-      <p style="margin-top:8px;font-weight:800;font-size:16px;">Context Model + Ikigai Labs acquisition</p>
-      <p style="margin-top:6px;font-size:13.5px;">Celonis launched its Context Model and acquired Ikigai Labs (MIT took an equity stake for a patent license), extending process context into AI forecasting and the agentic-AI layer.</p>
-      <div class="callout co-yellow"><b>ICP:</b> CIO / Chief AI Officer. Directly answers "how do our AI agents get reliable context?" — the exact question Soma Venkat (Cooper) and Kay Stepper (Lucid) are asking.</div>
-      <div class="src"><a href="https://www.actuia.com/en/news/celonis-acquires-ikigai-labs-mit-takes-equity-stake-in-exchange-for-a-patent-license/" target="_blank">Source: Celonis acquires Ikigai Labs</a></div>
+      <span class="tag" style="background:#c46916">Partnership</span>
+      <h3 class="cardt">Celonis + Horváth</h3>
+      <p style="font-size:13.5px">July 7, 2026: management consultancy Horváth and Celonis announced a partnership combining process intelligence with strategic transformation; initial joint client projects already underway.</p>
+      <div class="callout co-yellow"><b>CFO / Chief Transformation Officer</b> — de-risks the "who implements this" question for transformation-heavy accounts (Methode, Lucid, Cooper Standard restructuring).</div>
+      <a class="src" href="https://www.celonis.com/news/press/celonis-and-horvath-combine-process-intelligence-and-strategic-transformation-in-new-partnership" target="_blank">Source: Celonis newsroom</a>
     </div>
 
     <div class="card">
-      <span class="tag pill-orange">Platform Innovation</span>
-      <p style="margin-top:8px;font-weight:800;font-size:16px;">New innovations for the composable enterprise</p>
-      <p style="margin-top:6px;font-size:13.5px;">Celonis unveiled new platform innovations to power AI-driven, composable enterprises — positioning process intelligence as the layer that governs how reliably an enterprise runs and automates.</p>
-      <div class="callout co-yellow"><b>ICP:</b> COO / VP Operations. Frames Celonis as operational governance, not just analytics — resonates with Neil Boehm's COO+CTO seat at Gentex.</div>
-      <div class="src"><a href="https://www.processexcellencenetwork.com/process-mining/news/celonis-announces-new-platform-innovations-to-power-ai-driven-composable-enterprises" target="_blank">Source: Process Excellence Network</a></div>
+      <span class="tag" style="background:#c46916">Product Launch</span>
+      <h3 class="cardt">Celonis Sailfin — Accounts Receivable app suite</h3>
+      <p style="font-size:13.5px">Celonis launched the Sailfin AR app suite, powered by process intelligence and AI, to improve cash flow and working capital — packaging the O2C/DSO plays into a deployable app.</p>
+      <div class="callout co-yellow"><b>CFO / VP Finance</b> — the exact wedge for Gentex (VOXX integration cash), Methode (turnaround), and any DSO conversation this week.</div>
+      <a class="src" href="https://www.celonis.com/news/press/celonis-launches-sailfin-accounts-receivable-app-suite-powered-by-process-intelligence-and-ai-to-improve-cash-flow-and-working-capital" target="_blank">Source: Celonis newsroom</a>
     </div>
 
   </div>
@@ -383,56 +442,52 @@
 
 <!-- ============ SECTION 6 ============ -->
 <section id="social">
-  <div class="sec-title">
-    <div class="badge" style="background:#2d4cb8;">6</div>
-    <div><h2>Social Media Hooks &amp; Video Scripts</h2><div class="sub">Short-form angles</div></div>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#2d4cb8">6</div><h2>Social Media Hooks &amp; Video Scripts</h2></div>
+  <p class="sec-sub">Data points and 60-second scripts for short-form video.</p>
+
   <div class="statbar">
-    <div class="stat"><div class="num">88%</div><div class="lbl">of AI agents never reach production<br><span style="font-size:9px;">DigitalApplied 2026</span></div></div>
-    <div class="stat"><div class="num">40%</div><div class="lbl">of agentic AI projects canceled by end-2027<br><span style="font-size:9px;">Gartner</span></div></div>
-    <div class="stat"><div class="num">$10M</div><div class="lbl">Mondelēz value in 18 mo w/ Celonis<br><span style="font-size:9px;">Celonis, Jul 2026</span></div></div>
-    <div class="stat"><div class="num">€15M</div><div class="lbl">Renault P2P value in 12 mo<br><span style="font-size:9px;">Celonis</span></div></div>
+    <div class="stat"><div class="n">95%</div><div class="l">of gen-AI pilots deliver no measurable P&amp;L return</div><div class="c">MIT / 2026</div></div>
+    <div class="stat"><div class="n">88%</div><div class="l">of AI agents never reach production</div><div class="c">DigitalApplied 2026</div></div>
+    <div class="stat"><div class="n">42%</div><div class="l">of companies abandoned most AI initiatives in 2025 (was 17%)</div><div class="c">Pertama Partners</div></div>
+    <div class="stat"><div class="n">1 in 9</div><div class="l">enterprises actually run AI agents in production</div><div class="c">DigitalApplied 2026</div></div>
   </div>
-  <div class="hookgrid">
 
-    <div class="hook navy">
-      <span class="tag" style="background:#ffd84d;color:#0d1b3d;">Fact-Based</span>
-      <div class="hl">Only <span class="yellow">1 in 9</span> enterprises actually run their AI agents in production.</div>
-      <div class="line"><b>0–5s:</b> "Everyone's building AI agents. Almost nobody's running them."</div>
-      <div class="line"><b>5–20s:</b> 4 in 5 companies have adopted agents — but only 1 in 9 reach production.</div>
-      <div class="line"><b>20–45s:</b> The blocker isn't the model. It's context — agents don't know how the business actually runs.</div>
-      <div class="line"><b>40–60s:</b> "That's the process layer. Want the 3 questions to test if your agents have it?"</div>
-      <div class="tip">Format: talking head + bold on-screen "1 in 9" stat overlay.</div>
+  <div class="grid3">
+
+    <div class="hookcard">
+      <span class="tag" style="background:#ffd84d;color:#0d1b3d">Fact-Based</span>
+      <div class="hl">"<span class="acc">95%</span> of AI pilots return exactly nothing."</div>
+      <div class="script">
+        <b>0–5s:</b> "95% of enterprise AI pilots deliver zero measurable return. Here's the one thing the other 5% did."<br>
+        <b>5–20s:</b> The failures all skipped the same step — they gave AI data, not context about how work actually runs.<br>
+        <b>20–45s:</b> The winners grounded their AI in a live process model — the real sequence, exceptions, and handoffs. That's the difference between a demo and a deployment.<br>
+        <b>40–60s:</b> "If your AI doesn't know your process, it's guessing. Comment 'CONTEXT' and I'll send the breakdown."
+      </div>
+      <div class="fmt">📹 Talking head + bold stat text overlay on "95%".</div>
     </div>
 
-    <div class="hook li">
-      <span class="tag" style="background:#ffd84d;color:#0d1b3d;">Gap-Based</span>
-      <div class="hl"><span class="yellow">88%</span> of AI agents fail. The 12% that survive return 171% ROI.</div>
-      <div class="line"><b>0–5s:</b> "88% of enterprise AI agents die before production."</div>
-      <div class="line"><b>5–20s:</b> The survivors? They return 171% ROI. So it's not that AI doesn't work.</div>
-      <div class="line"><b>20–45s:</b> The difference is context — the winners feed agents a live model of the real process.</div>
-      <div class="line"><b>40–60s:</b> "Here's how the 12% set theirs up 👇"</div>
-      <div class="tip">Format: text-overlay reel, split-screen 88% vs 12%.</div>
+    <div class="hookcard blue">
+      <span class="tag" style="background:#ffd84d;color:#0d1b3d">Gap-Based</span>
+      <div class="hl">"You adopted AI agents. <span class="acc">Only 1 in 9</span> actually run them."</div>
+      <div class="script">
+        <b>0–5s:</b> "Almost every enterprise says they've 'adopted' AI agents. Only one in nine run them in production."<br>
+        <b>5–20s:</b> The gap isn't the model. It's infrastructure (41%), governance (38%), and no way to prove ROI (33%).<br>
+        <b>20–45s:</b> All three collapse to one root cause: the agent has no trustworthy picture of the process it's supposed to run.<br>
+        <b>40–60s:</b> "Adoption is easy. Production is a context problem. Which side of the gap is your team on?"
+      </div>
+      <div class="fmt">📹 Text-overlay format; animate the 8-to-1 drop-off.</div>
     </div>
 
-    <div class="hook navy">
-      <span class="tag" style="background:#ffd84d;color:#0d1b3d;">Trend-Based</span>
-      <div class="hl">"Context layer" is 2026's most fought-over word — <span class="yellow">for a reason.</span></div>
-      <div class="line"><b>0–5s:</b> "Databricks, Salesforce, Snowflake — everyone claims the 'context layer' now."</div>
-      <div class="line"><b>5–20s:</b> They mean data context. But your data catalog doesn't know how a process actually ran.</div>
-      <div class="line"><b>20–45s:</b> Process context is different: it models execution, conformance, and where value leaks.</div>
-      <div class="line"><b>40–60s:</b> "Data context vs. process context — here's why AI needs both."</div>
-      <div class="tip">Format: B-roll of logos → whiteboard sketch of the two layers.</div>
-    </div>
-
-    <div class="hook li">
-      <span class="tag" style="background:#ffd84d;color:#0d1b3d;">Fact-Based</span>
-      <div class="hl">A snack company found <span class="yellow">$6M</span> in 90 days — hiding in credit memos.</div>
-      <div class="line"><b>0–5s:</b> "Mondelēz recovered $6 million in 90 days. From credit-memo leakage."</div>
-      <div class="line"><b>5–20s:</b> Not new revenue — money already leaving through a broken process nobody could see.</div>
-      <div class="line"><b>20–45s:</b> Process intelligence maps every transaction and shows exactly where cash leaks.</div>
-      <div class="line"><b>40–60s:</b> "What's your version of the credit-memo leak? DM me 'audit.'"</div>
-      <div class="tip">Format: talking head, "$6M / 90 days" counter animation.</div>
+    <div class="hookcard">
+      <span class="tag" style="background:#ffd84d;color:#0d1b3d">Trend-Based</span>
+      <div class="hl">One day of DSO = <span class="acc">$40M</span> in free cash flow.</div>
+      <div class="script">
+        <b>0–5s:</b> "A finance leader told me one day of DSO was worth $40 million in free cash flow. Then he found 12 of them."<br>
+        <b>5–20s:</b> Most companies chase DSO with spreadsheets and gut feel — they can't see where invoices actually stall.<br>
+        <b>20–45s:</b> Process intelligence maps every invoice's real path, exposes the stalls, and fixes the ones that move cash. IQVIA and Accenture freed tens of millions doing exactly this.<br>
+        <b>40–60s:</b> "What's one day of DSO worth to you? That's your first use case."
+      </div>
+      <div class="fmt">📹 B-roll of cash/finance dashboards; big "$40M" hit on beat.</div>
     </div>
 
   </div>
@@ -440,108 +495,117 @@
 
 <!-- ============ SECTION 7 ============ -->
 <section id="bdr">
-  <div class="sec-title">
-    <div class="badge" style="background:#c0392b;">7</div>
-    <div><h2>BDR Daily Tasks &amp; Campaigns</h2><div class="sub">Grant (top-down) + Sander (bottom-up) · pincer play</div></div>
-  </div>
+  <div class="sec-head"><div class="badge" style="background:#c0392b">7</div><h2>BDR Daily Tasks &amp; Campaigns</h2></div>
+  <p class="sec-sub">Two lanes per account — Grant (top-down exec) &amp; Sander (bottom-up director/VP). Signal-anchored only. Pincer play; threads stay with whoever opens them.</p>
+
   <div class="grid2">
 
-    <!-- Monday Cooper -->
-    <div class="card lr">
-      <div class="dayhead"><div class="day" style="color:#c0392b;">Monday</div><div class="acct">Cooper Standard</div></div>
-      <div class="box"><h4>Cadence Step</h4>Day 1 cold email <b>1:00 PM local</b> to Soma Venkat (CIO/AI). Day 4 LinkedIn connect referencing the Constellation BT150 recognition. <span class="tag pill-orange">Modernization</span></div>
-      <div class="callout co-red">
-        <b>Subject:</b> Your BT150 nod — and the leak behind it<br><br>
-        <b>Grant lane (CIO):</b> Soma — congrats on the Constellation Business Transformation 150. With the Q2 refinancing tightening the cost mandate, the hard part for an AI office is proving where working capital actually leaks across a mixed ERP estate — not the dashboards, the real process. Renault's team found €15M in 12 months doing exactly this, system-agnostic. What's the one process you'd most want an objective baseline on before your next AI build?
+    <!-- MON Cooper Standard -->
+    <div class="card lred">
+      <div class="day" style="color:#c0392b">Monday</div>
+      <div class="acct sm">Cooper Standard</div>
+      <div class="contacts"><b>Cadence:</b> Day 1 cold email to Venkat @ 1:00 PM ET. New sequence — no prior touches. Sander opens bottom-up same day.</div>
+      <div class="draft">
+        <div class="subj">Subject: Making the $17M stick</div>
+        <b>Grant → Soma Venkat (CIO/AI Officer):</b> Context — saw Q2 carried $17.1M in restructuring charges while you held FY guidance and kept winning new business. Value — the risk with cost actions is the savings leaking back once the org normalizes; peers use process intelligence to lock in restructuring gains and show exactly where they land across plants (MAHLE freed 20% of inventory the same way). Ask — how are you tracking whether those Q2 cost actions actually hold at the plant level?
       </div>
-      <div class="lane lane-sander"><b>Sander lane:</b> map the Champion/Technical-Evaluator layer beneath Venkat — search "Cooper Standard" ("Director IT" OR "VP Finance Transformation" OR "Process Excellence"). Open bottom-up Day 3.</div>
-      <p style="font-size:12.5px;margin-top:8px;"><b>Multi-thread next:</b> Economic Buyer — CFO / VP Finance (P2P owner).</p>
+      <div class="mt"><b>Sander lane:</b> map VP Manufacturing / Plant Ops + Director of FP&amp;A (Technical Evaluator + End User). LinkedIn + Day-1 bottom-up note anchored to the restructuring signal.</div>
+      <div class="mt"><b>Multi-thread next:</b> Economic Buyer — search "VP Operations Cooper Standard."</div>
+      <span class="pill" style="background:#fdeeee;color:#c0392b">Portfolio: Modernization</span>
     </div>
 
-    <!-- Tuesday Gentex -->
-    <div class="card lr">
-      <div class="dayhead"><div class="day" style="color:#c0392b;">Tuesday</div><div class="acct">Gentex</div></div>
-      <div class="box"><h4>Cadence Step</h4>Day 1 cold email 1:00 PM local to Neil Boehm (COO/CTO). <b>⏰ Tue 4–5 PM = call block</b> for any prior-week Day-6 cold calls (&lt;30-sec voicemail). <span class="tag pill-orange">Modernization</span></div>
-      <div class="callout co-red">
-        <b>Subject:</b> Great margin, missed top line<br><br>
-        <b>Grant lane (COO):</b> Neil — 37% gross margin was a strong Q2 print, but the revenue miss on a 3% auto decline says demand is the pressure now. As both COO and CTO you own the trade-off directly: process intelligence protects OEE, scrap and downtime while volume is soft, so the margin you just delivered holds. Where are you seeing the most avoidable cost on the plant floor right now?
+    <!-- TUE Gentex -->
+    <div class="card lred">
+      <div class="day" style="color:#c0392b">Tuesday</div>
+      <div class="acct sm">Gentex</div>
+      <div class="contacts"><b>Cadence:</b> Day 1 cold email to Boehm @ 1:00 PM ET. <b>🕓 Tue 4–5 PM ET = call block</b> for any prior-week open threads (&lt;30-sec voicemail).</div>
+      <div class="draft">
+        <div class="subj">Subject: 15 months into VOXX</div>
+        <b>Grant → Neil Boehm (COO &amp; CTO):</b> Context — 15 months post-VOXX and you're calling it a meaningful profit contributor; Q2 margin hit 37%. Value — the next synergy tranche usually hides in the seams between two order-to-cash and supply-chain flows; process intelligence baselines both so cash conversion doesn't degrade as you fully merge (Celonis just packaged this as the Sailfin AR app). Ask — how unified is your O2C view across legacy Gentex and VOXX today?
       </div>
-      <div class="lane lane-sander"><b>Sander lane:</b> open the End-User/plant layer — "Gentex" ("Manufacturing Engineering" OR "Continuous Improvement" OR "Plant Manager"). LinkedIn touches + call block.</div>
-      <p style="font-size:12.5px;margin-top:8px;"><b>Multi-thread next:</b> Technical Evaluator — VP Manufacturing / Ops Excellence.</p>
+      <div class="mt"><b>Sander lane:</b> map Director of Integration / VP Finance-VOXX + Supply Chain Director. Day-8 benchmark send on his own threads.</div>
+      <div class="mt"><b>Multi-thread next:</b> Economic Buyer — search "VP Finance Gentex."</div>
+      <span class="pill" style="background:#fdeeee;color:#c0392b">Portfolio: Modernization</span>
     </div>
 
-    <!-- Wednesday Lucid -->
-    <div class="card lr">
-      <div class="dayhead"><div class="day" style="color:#c0392b;">Wednesday</div><div class="acct">Lucid Motors</div></div>
-      <div class="box"><h4>Cadence Step</h4>Day 1 cold email 1:00 PM local to Kay Stepper (President/CDO). Day 3 reply-in-thread with peer proof if opened. <span class="tag pill-blue">Transformation</span></div>
-      <div class="callout co-red">
-        <b>Subject:</b> A live map for the reorg<br><br>
-        <b>Grant lane (CEO office / CDO):</b> Kay — halving the CEO's direct reports is the right accountability move, but reorgs succeed or fail on whether leadership can <i>see</i> where cash and cycle-time actually leak. Napoli is running the company on evidence right now; process intelligence gives him that live map — the same layer that lets your AI and autonomy stack act on real context, not assumptions. As you simplify structure, where would an objective process baseline help most first?
+    <!-- WED Lucid -->
+    <div class="card lred">
+      <div class="day" style="color:#c0392b">Wednesday</div>
+      <div class="acct sm">Lucid Motors</div>
+      <div class="contacts"><b>Cadence:</b> Day 1 cold email to new CTO Raja Macha @ 1:00 PM PT. Exec-change trigger = Grant's lane (new leader).</div>
+      <div class="draft">
+        <div class="subj">Subject: First 90 days, ex-Eaton</div>
+        <b>Grant → Raja Macha (CTO):</b> Context — congrats on the CTO seat; you've stepped into a full C-suite reset with a Chief Transformation Officer alongside you. Value — new transformation mandates live or die on finding defensible cost + cycle-time wins fast; process intelligence gives you a board-ready baseline in weeks, not quarters, and grounds any AI agenda in real process (Celonis Context Model). Ask — what's the first process you need hard numbers on for your 90-day plan?
       </div>
-      <div class="lane lane-sander"><b>Sander lane:</b> map beneath Stepper — "Lucid Motors" ("Enterprise IT" OR "Business Systems" OR "Manufacturing Operations"). Bottom-up open Day 3.</div>
-      <p style="font-size:12.5px;margin-top:8px;"><b>Multi-thread next:</b> Economic Buyer — new CFO (seat open post-shakeup; verify before naming).</p>
+      <div class="mt"><b>Sander lane:</b> map the new Chief Transformation Officer's org — Director PMO / Ops Excellence (future Champion). Never touch Macha (Grant's).</div>
+      <div class="mt"><b>Multi-thread next:</b> Champion — search "Head of Operational Excellence Lucid."</div>
+      <span class="pill" style="background:#fdeeee;color:#c0392b">Portfolio: Transformation</span>
     </div>
 
-    <!-- Thursday Methode -->
-    <div class="card lr">
-      <div class="dayhead"><div class="day" style="color:#c0392b;">Thursday</div><div class="acct">Methode Electronics</div></div>
-      <div class="box"><h4>Cadence Step</h4>Day 1 cold email 1:00 PM local to Laura Kowalchik (CFO). Day 4 LinkedIn connect for DeGaynor. <span class="tag pill-orange">Modernization</span></div>
-      <div class="callout co-red">
-        <b>Subject:</b> Fund "grow it" with "fix it"<br><br>
-        <b>Grant lane (CFO):</b> Laura — 22 months of turnaround has stabilized the base; the pivot to data-center/EV power needs cash to fund it. That cash is usually sitting in the process debt the old org left behind. Mondelēz recovered $6M in 90 days plugging one leak; touchless AP and a faster close do the same. What would a self-funding "fix it" look like against your FY26 EBITDA target?
+    <!-- THU Methode -->
+    <div class="card lred">
+      <div class="day" style="color:#c0392b">Thursday</div>
+      <div class="acct sm">Methode Electronics</div>
+      <div class="contacts"><b>Cadence:</b> Day 1 cold email to DeGaynor @ 1:00 PM CT. CEO-level exec trigger (turnaround) = Grant's lane.</div>
+      <div class="draft">
+        <div class="subj">Subject: Protecting margin at 60% growth</div>
+        <b>Grant → Jon DeGaynor (CEO):</b> Context — Adj EBITDA up 60% and FY27 guide leans on ~60% data-center sales growth. Value — capacity ramps are exactly where new inefficiency creeps in and quietly erodes the margin you just rebuilt; process intelligence keeps operational discipline visible as volume scales, and AP plays free balance-sheet cash in-year (Florida Crystals: millions in &lt;1 yr). Ask — how are you keeping process discipline tight while growing that fast?
       </div>
-      <div class="lane lane-sander"><b>Sander lane:</b> with 7/10 execs new, map the fresh bench — "Methode Electronics" ("VP Finance" OR "Controller" OR "IT Director"). Build the committee from scratch.</div>
-      <p style="font-size:12.5px;margin-top:8px;"><b>Multi-thread next:</b> Champion — new VP Finance / Transformation lead.</p>
+      <div class="mt"><b>Sander lane:</b> map VP Operations + Corporate Controller (End User + Technical Evaluator). Buying-committee build in week 1.</div>
+      <div class="mt"><b>Multi-thread next:</b> Economic Buyer — search "CFO Methode Electronics" (CFO seat in transition — verify current holder).</div>
+      <span class="pill" style="background:#fdeeee;color:#c0392b">Portfolio: Transformation</span>
     </div>
 
-    <!-- Friday Visteon -->
-    <div class="card lr">
-      <div class="dayhead"><div class="day" style="color:#c0392b;">Friday</div><div class="acct">Visteon</div></div>
-      <div class="box"><h4>Cadence Step</h4>Day 1 cold email 1:00 PM local to Raman Mehta (CIO). Day 4 LinkedIn connect referencing the $2B SDV awards. <span class="tag pill-teal">Innovation</span></div>
-      <div class="callout co-red">
-        <b>Subject:</b> $2B in awards — now the launches<br><br>
-        <b>Grant lane (CIO):</b> Raman — $2B in new awards with 60% from the SDV portfolio is a great problem: the whole story is now launch execution. As programs ramp, engineering-change and quote-to-launch cycle-time quietly erode the margin the Q2 EPS miss just flagged. Process intelligence keeps ramping programs conforming and on-time at volume. As SDV intake scales, where's your biggest launch-velocity risk?
+    <!-- FRI Visteon -->
+    <div class="card lred">
+      <div class="day" style="color:#c0392b">Friday</div>
+      <div class="acct sm">Visteon</div>
+      <div class="contacts"><b>Cadence:</b> Day 1 cold email to CIO Raman Mehta @ 1:00 PM ET. Sander opens bottom-up same day.</div>
+      <div class="draft">
+        <div class="subj">Subject: $3B booked, margin missed</div>
+        <b>Grant → Raman Mehta (CIO):</b> Context — record H1: $3B in new SDV wins, 24 launches across 11 OEMs — but Q2 adj EPS missed on margin compression. Value — ramping that book is a launch-execution problem; process intelligence exposes launch-to-launch variance and supply-chain leak before it compounds across 11 programs (MAHLE recovered 20% of inventory this way). Ask — what visibility do you have today into where margin leaks between one OEM launch and the next?
       </div>
-      <div class="lane lane-sander"><b>Sander lane:</b> open the program/engineering layer — "Visteon" ("Program Management" OR "PLM" OR "Engineering Operations"). LinkedIn + Day 3 bottom-up.</div>
-      <p style="font-size:12.5px;margin-top:8px;"><b>Multi-thread next:</b> Technical Evaluator — VP Program Management / Digital.</p>
+      <div class="mt"><b>Sander lane:</b> map Director SDV Program Mgmt + Supply Chain Director under CTO Schupfner (Technical Evaluator). Day-4 LinkedIn on his own threads.</div>
+      <div class="mt"><b>Multi-thread next:</b> Technical Evaluator — search "Director Program Management Visteon."</div>
+      <span class="pill" style="background:#fdeeee;color:#c0392b">Portfolio: Modernization</span>
     </div>
 
   </div>
 
-  <!-- Campaign Corner -->
-  <div class="card" style="margin-top:16px;border-top:4px solid #c0392b;">
-    <h3 style="color:#0d1b3d;font-size:17px;">Campaign Corner</h3>
-    <div class="callout co-red" style="margin-top:10px;">
-      <b>This Week's Campaign — "Beat vs. Miss: defend the margin."</b> Four of five accounts posted a beat-on-one-line / miss-on-another Q2 (Gentex margin↑ revenue↓; Visteon revenue↑ EPS↓; Cooper refinancing; Methode turnaround). Enroll Cooper Standard, Gentex, Visteon, Methode in a single narrative: process intelligence defends margin exactly when the top line wobbles. Lucid runs the parallel Transformation track (new-CEO reorg).
-    </div>
-    <div class="box" style="margin-top:12px;"><h4>Cadence Cheat Sheet (14-day, 8–12 touches)</h4>
-      Day 1 email (1 PM) → Day 3 thread reply + peer proof → Day 4 LinkedIn connect → Day 6 call (Tue 4–5 PM) → Day 8 benchmark email → Day 10 LinkedIn DM → Day 12 second call → Day 14 breakup email → Day 15+ multi-thread.
-    </div>
-    <div class="metricbar">
+  <!-- Campaign corner -->
+  <div class="card" style="margin-top:16px;border-top:5px solid #c0392b">
+    <h3 class="cardt">Campaign Corner</h3>
+    <div class="lbl">This week's campaign</div>
+    <p style="font-size:13.5px;margin:4px 0"><b>"Make the Cost Program Stick"</b> — the Group-2 signals converge on cost/margin under pressure: Cooper Standard's $17.1M restructuring, Adient's margin slip, Visteon's margin miss, Methode's rebuild. Enroll Cooper Standard, Visteon, and Methode in a coordinated play: restructuring/growth savings that leak unless you can see and hold them at the process level. Lead metric: durable savings, not one-time charges.</p>
+    <div class="lbl" style="margin-top:8px">14-day cadence cheat sheet</div>
+    <div class="cheat">Day 1 email → Day 3 thread reply (peer proof) → Day 4 LinkedIn connect → Day 6 call (Tue 4–5 PM) → Day 8 benchmark email → Day 10 LinkedIn DM → Day 12 second call → Day 14 breakup → Day 15+ multi-thread</div>
+    <div class="metrics">
       <span class="mchip">🎯 Reply target 15–25% (vs 1–5% generic)</span>
-      <span class="mchip">📞 Best call window Tue 4–5 PM</span>
-      <span class="mchip">🕸 5+ threads/account → 45% vs 22% close</span>
+      <span class="mchip">🕓 Best call window: Tue 4–5 PM local</span>
+      <span class="mchip">🔗 5+ threads/account → 45% vs 22% close</span>
     </div>
-    <div class="callout co-green" style="margin-top:12px;"><b>Give-to-Get asset:</b> An ROI calculator pre-filled with Cooper Standard's public financials (Q2 revenue, refinancing cost) modeling P2P working-capital recovery against the Renault €15M / Mondelēz $6M-in-90-days benchmarks — offered as the Day 8 send.</div>
+    <div class="lbl" style="margin-top:8px">Give-to-get asset</div>
+    <p style="font-size:13.5px;margin:4px 0">Build a <b>pre-filled ROI calculator for Visteon</b> using its public financials ($960M Q2 sales, $3B H1 bookings, margin-miss context) that models the cash impact of cutting launch-related inventory 20% and shaving DSO — a concrete, account-specific artifact for the Mehta thread.</p>
   </div>
 </section>
 
 </div>
-<footer class="fix">Brief auto-generated · August 5, 2026 · grant-faulkner.github.io/My-Sales-Brief</footer>
+
+<footer class="fx">Brief auto-generated · August 6, 2026 · grant-faulkner.github.io/My-Sales-Brief</footer>
 
 <script>
-  const links = [...document.querySelectorAll('nav.pills a')];
-  const map = {};
-  links.forEach(l => map[l.getAttribute('href').slice(1)] = l);
-  const obs = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        links.forEach(l=>l.classList.remove('active'));
-        if(map[e.target.id]) map[e.target.id].classList.add('active');
-      }
-    });
-  }, { rootMargin:'-20% 0px -70% 0px', threshold:0 });
-  document.querySelectorAll('section').forEach(s=>obs.observe(s));
+// Active-pill on scroll
+const links = [...document.querySelectorAll('nav.sticky a')];
+const secs = links.map(a => document.querySelector(a.getAttribute('href')));
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id = '#'+e.target.id;
+      links.forEach(l=>l.classList.toggle('active', l.getAttribute('href')===id));
+    }
+  });
+},{rootMargin:'-45% 0px -50% 0px', threshold:0});
+secs.forEach(s=>s&&io.observe(s));
 </script>
 </body>
 </html>
